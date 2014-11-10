@@ -3,3 +3,9 @@ miyamoto:
   last_name: "Miyamoto"
   email: "MiyamotoMusashi271828@gmail.com"
   profile_name: "MiyamotoMusashi"
+
+jon:
+  first_name: "Jon"
+  last_name: "Marshall"
+  email: "JonMarshall@gmail.com"
+  profile_name: "JonMarshall"
