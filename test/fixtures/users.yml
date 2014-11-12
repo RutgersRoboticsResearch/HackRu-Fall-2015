@@ -9,3 +9,9 @@ jon:
   last_name: "Marshall"
   email: "JonMarshall@gmail.com"
   profile_name: "JonMarshall"
+
+greg:
+  first_name: "Greg"
+  last_name: "Flow"
+  email: "Geflow@gmail.com"
+  profile_name: "GregFlow"
