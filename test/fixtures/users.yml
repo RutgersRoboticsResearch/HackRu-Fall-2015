@@ -3,7 +3,7 @@ miyamoto:
   last_name: "Miyamoto"
   email: "MiyamotoMusashi271828@gmail.com"
   profile_name: "MiyamotoMusashi"
-  encrypted_password: "$2a$10$Fh/Hm8RxDsuPTeBUr6864.GARlcmt7zF2WspaXGr3BIv2C27N.osq"
+  encrypted_password: "$2a$10$jR6OkSmaEDObF9pKztXVHO1J2bHwPdf/p6u7773sA7onMqrACOtL."
 jon:
   first_name: "Jon"
   last_name: "Marshall"
