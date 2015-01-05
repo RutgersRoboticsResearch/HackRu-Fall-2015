@@ -12,7 +12,7 @@ class ProfilesControllerTest < ActionController::TestCase
   	assert_response :not_found
   end
 
-  test "tat variables are assigned on successful profile viewing" do
+  test "that variables are assigned on successful profile viewing" do
     get :show, id: users(:miyamoto).profile_name
     assert assigns(:user)
     assert_not_empty assigns(:statuses)

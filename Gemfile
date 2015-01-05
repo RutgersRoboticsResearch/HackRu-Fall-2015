@@ -8,6 +8,13 @@ gem 'rails', '3.2.18'
 gem 'devise'
 gem 'simple_form'
 gem 'state_machine'
+gem 'draper'
+gem 'js-routes'
+gem 'paperclip'
+
+group :development do
+	gem 'thin'
+end
 
 group :test do
 	gem 'shoulda'
@@ -16,6 +23,7 @@ end
 
 group :development, :test do
 	gem 'sqlite3'
+	gem 'log_buddy'
 end
 
 group :production do

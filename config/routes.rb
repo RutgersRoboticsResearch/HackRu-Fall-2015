@@ -19,6 +19,7 @@ RCubed::Application.routes.draw do
   resources :user_friendships do
     member do
       put :accept
+      put :block
     end
   end
 
