@@ -30,8 +30,8 @@ development:
   database: project_development
   host: localhost
   pool: 5
-  username: uv2ab6
-  password: h5GLRtMa01fh2sF
+  username: 
+  password: 
 
 test:
   adapter: postgresql
@@ -39,8 +39,8 @@ test:
   database: project_test
   host: localhost
   pool: 5
-  username: uv2ab6
-  password: h5GLRtMa01fh2sF
+  username: 
+  password: 
 
 production:
   adapter: postgresql
@@ -48,5 +48,5 @@ production:
   database: project_production
   host: localhost
   pool: 5
-  username: uv2ab6
-  password: h5GLRtMa01fh2sF
+  username: 
+  password: 
