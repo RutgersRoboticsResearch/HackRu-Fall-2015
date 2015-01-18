@@ -106,7 +106,6 @@ var renderActivities = function(){
     html = "<li><a href='"+ path +"'>" + this.user_name + " " + this.action + " a " + linkText + ".</a></li>";
     return new Handlebars.SafeString(html);
   });
-/*
+
 window.pollInterval = window.setInterval( pollActivity, 5000 );
 pollActivity();
-*/

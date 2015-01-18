@@ -140,7 +140,6 @@ GEM
       multi_json (~> 1.0)
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
-    sqlite3 (1.3.10)
     state_machine (1.2.0)
     thin (1.6.3)
       daemons (~> 1.0, >= 1.0.9)
@@ -184,7 +183,6 @@ DEPENDENCIES
   sass-rails (~> 3.2.3)
   shoulda
   simple_form
-  sqlite3
   state_machine
   thin
   twitter-bootstrap-rails

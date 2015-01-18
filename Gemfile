@@ -28,13 +28,13 @@ group :test do
 end
 
 group :development, :test do
-	gem 'sqlite3'
+	#gem 'sqlite3'
 	gem 'log_buddy'
 end
 
-group :production do
-	gem "pg"
-end
+
+gem 'pg'
+
 
 group :production do
   gem 'rails_12factor'
