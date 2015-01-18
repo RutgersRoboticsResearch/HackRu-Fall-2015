@@ -20,6 +20,9 @@ class User < ActiveRecord::Base
                              message: 'Must be formatted correctly.'
                            }
 
+  has_many :activities                          
+  has_many :albums
+  has_many :pictures
   has_many :statuses
   has_many :user_friendships
   has_many :friends, through: :user_friendships,
@@ -50,15 +53,15 @@ class User < ActiveRecord::Base
 
   }
 
-  def self.get_gravatars
-    all.each do |user|
-      if !user.avatar?
-        user.avatar = URI.parse(user.gravatar_url)
-        user.save
-        print "."
-      end
-    end 
-  end
+  #def self.get_gravatars
+  #  all.each do |user|
+  #    if !user.avatar?
+  #      user.avatar = URI.parse(user.gravatar_url)
+  #      user.save
+  #      print "."
+  #    end
+  #  end 
+  #end
 
   def full_name
     first_name + " " + last_name
@@ -79,5 +82,14 @@ class User < ActiveRecord::Base
   def has_blocked?(other_user)
     blocked_friends.include?(other_user)
   end
+
+  def create_activity(item, action)
+    activity = activities.new
+    activity.targetable = item
+    activity.action = action
+    activity.save
+    activity
+  end
+
 
 end

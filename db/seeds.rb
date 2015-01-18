@@ -20,7 +20,7 @@ User.create({
 User.create({
   first_name: "Musashi",
   last_name: "Miyamoto",
-  profile_name: "jason",
+  profile_name: "miyamoto",
   email: "miyamotomusashi@gmail.com",
   password: DEFAULT_INSECURE_PASSWORD,
   password_confirmation: DEFAULT_INSECURE_PASSWORD

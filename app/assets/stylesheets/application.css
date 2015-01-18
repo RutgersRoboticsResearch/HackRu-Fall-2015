@@ -13,9 +13,102 @@
  */
 
 body {
-	padding-top: 40px;
+	padding-top: 100px;
 }
 
 .alert {
 	margin-top: 10px; 
+}
+
+
+
+
+#nav-wrapper{
+	width: 900px;
+	height: 80px;
+	z-index: 2;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+}
+
+#brand_logo{
+	display: block;
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	margin-top: -20px;
+}
+
+
+#git_logo, #fb_logo, #rutgers_logo, #twitter_logo{
+	display: block;
+	float: right;
+}
+
+#Sign_In{
+	margin-bottom: 220px;
+}
+
+#slamBot{
+	margin-top: 20px;
+}
+
+#htext{
+	font-size: 45px;
+}
+
+#h3text{
+	font-size: 18px;
+	color: #958976;
+}
+
+/**********************************************************************
+FOOTER
+***********************************************************************/
+
+footer{
+	box-shadow: 0px 500px 0px 500px #6F0917;
+	width: 100%;
+
+}
+
+#footerTop{
+	background-color: #6F0917;
+	height: 200px;
+}
+
+#footerBottom{
+	background-color: #B8AE9C;
+	height: 60px;
+}
+
+#footerImg{
+	display: block;
+}
+
+#copyDetails{
+	display: block;
+	text-align: center;
+	color: #F0F0F0;
+}
+
+.footerDetails{
+	width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+	height: 6.5em;
+}
+
+address{
+	margin-top: 2em;
+	display: block;
+	color: white;
+	font-family: Georgia;
+	font-style: normal;
+}
+
+#footerLogo{
+	position: relative;
+	float: right;
 }

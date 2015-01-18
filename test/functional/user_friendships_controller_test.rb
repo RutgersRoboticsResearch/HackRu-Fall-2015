@@ -271,16 +271,29 @@ class UserFriendshipsControllerTest < ActionController::TestCase
       end
 
       should "assign a user_friendship" do
+        put :accept, id: @user_friendship
+        @user_friendship.reload
         assert assigns(:user_friendship)
         assert_equal @user_friendship, assigns(:user_friendship)
       end
 
       should "update the state to accepted" do
+        put :accept, id: @user_friendship
+        @user_friendship.reload
         assert_equal 'accepted', @user_friendship.state
       end
 
       should "have a flash success message" do
+        put :accept, id: @user_friendship
+        @user_friendship.reload
         assert_equal "You are now friends with #{@user_friendship.friend.first_name}", flash[:success]
+      end
+
+      should "create activity" do
+        assert_difference "Activity.count" do
+        put :accept, id: @user_friendship
+        @user_friendship.reload
+        end
       end
     end
   end

@@ -1,0 +1,14 @@
+<section id="home">
+	<img id = "headPic" src= "/assets/slamBot2.jpg"/>
+	<section id="pitch">
+		<h1 id="htext">Known as R-Cubed</h1>
+		<hr>
+		<h3 id="h3text">We aim to pair motivated members with advanced research projects and like minded roboticists, engineers, computer scientists, and hackers.</h3>
+		<% if user_signed_in? %>
+<% else %>
+<%= link_to "Sign up for R-Cubed!", register_path, class: 'btn btn-success' %>
+
+<% end %>
+	</section>
+	<img id="home_pic"src= "/assets/r3_large.png"/>
+</section>

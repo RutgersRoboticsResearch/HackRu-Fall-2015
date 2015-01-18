@@ -1,4 +1,9 @@
 RCubed::Application.routes.draw do
+  resources :homes
+
+
+  resources :activities, only: [:index]
+
   get "profiles/show"
 
 
@@ -25,7 +30,19 @@ RCubed::Application.routes.draw do
 
   resources :statuses
   get 'feed', to: 'statuses#index',as: :feed
-  root to: 'statuses#index'
+
+
+  root to: 'homes#index'
+  
+  devise_scope :user do
+    root to: "devise/sessions#new"
+  end
+
+  scope ":profile_name" do
+    resources :albums do
+      resources :pictures
+    end
+  end
 
   get '/:id', to: 'profiles#show', as: 'profile'
 
