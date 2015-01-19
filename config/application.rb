@@ -62,9 +62,9 @@ module RCubed
     config.assets.version = '1.0'
     config.assets.initialize_on_precompile = true
 
-    config.generators do |g|
-      g.factory_girl false
-  end
+   # config.generators do |g|
+   #   g.factory_girl false
+  #end
 
 end
 end
