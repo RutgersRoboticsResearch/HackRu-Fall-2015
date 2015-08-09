@@ -28,8 +28,7 @@ RCubed::Application.routes.draw do
     end
   end
 
-  resources :statuses
-  get 'feed', to: 'statuses#index',as: :feed
+
 
 
   root to: 'homes#index'
@@ -38,11 +37,6 @@ RCubed::Application.routes.draw do
     root to: "devise/sessions#new"
   end
 
-  scope ":profile_name" do
-    resources :albums do
-      resources :pictures
-    end
-  end
 
   get '/:id', to: 'profiles#show', as: 'profile'
 
