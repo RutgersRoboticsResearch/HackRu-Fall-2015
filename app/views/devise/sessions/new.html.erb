@@ -1,20 +1,23 @@
 <%= page_header do %>
+  <img id="hruBanner" src="assets/hru.png"/>
+  <img id="hruLogo" src="assets/hack_ru_logo.png"/>
   <h1>Sign In</h1>
 <% end %>
 
 <div id="Sign_In" class="row">
 	<div class="span4">
 		<%= simple_form_for(resource, :as => resource_name, :url => session_path(resource_name), html: {class: "form-vertical"}) do |f| %>
-
 		<fieldset>
-			<%= f.input :email, input_html: { class: 'input-xlarge' } %>
-			<%= f.input :password, input_html: { class: 'input-xlarge' } %>
+          <%= devise_error_messages! %>
+			<%= f.input :email, label: false, input_html: { class: 'form-input', id:'email',placeholder: "Email" } %>
+			<%= f.input :password, label: false, input_html: { class: 'form-input', id:'password',placeholder: "Password" } %>
 
-			<% if devise_mapping.rememberable? -%>
+			<% if devise_mapping.rememberable? %>
+			<br>
 			<%= f.input :remember_me, as: :boolean, inline_label: "Remember Me", label: false %>
-			<% end -%>
+			<% end %>
 
-      <%= f.submit "Sign In", class: 'btn btn-primary' %><br />
+      <%= f.submit "Sign In", class: 'registerBtn registerBtn-1' %><br />
       <%= render "devise/shared/links" %>
 		</fieldset>
 		<% end %>

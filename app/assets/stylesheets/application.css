@@ -1,24 +1,26 @@
-/**************************
+/****************************************************
 MAIN STYLE
-**************************/
-
-html {
+****************************************************/
+html{
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
 
+#signup{
+	float: left;
+}
+
 body{
-  background-color: #FFFFFF; 
-  background: url('../images/bgPattern.jpg');
+  background: url("bg_pattern6.png");
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
   color: #E3CDA4;
-  background-attachment: fixed;  
-  background-size: 100% auto;  
+  background-attachment: fixed;
 }
+
 header{
   height: 4.4em;
   width: 100%;
@@ -27,20 +29,18 @@ header{
   top:0px;
 }
 
-h1, h2, h3, legend {
-  font-weight: normal;
+h1, h2, h3, legend, h6{
   line-height: 120%;
   margin: 0;
   padding: 0;
   color: black;
-  text-shadow: 1px 1px #333;
   margin: 10px 0;
   font-family: inherit;
   font-weight: bold;
   text-rendering: optimizelegibility;
 }
 
-h1, legend {
+legend{
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
   font-size: 38.5px;  
   margin-bottom: 30px;
@@ -49,7 +49,7 @@ h1, legend {
   color:#B39D74;
 }
 
-fieldset {
+fieldset{
   font-family: sans-serif;
   border: 5px solid #1F497D;
   background: #ddd;
@@ -65,81 +65,66 @@ label{
   font-size: 1.5em;
 }
 
-h3{
-  font-size: 7em;
-  margin: 1em;
-}
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-nav,
-section {
-  display: block;
-}
-
 p{
-  letter-spacing: 2px;
   font-size: 16px;
-  color:#feffe6;
+  color: white;
   font-family: Helvetica, Arial, "Lucida Grande", sans-serif; 
-
 }
 
-a {
-  color: #0088cc;
+a{
+  color: blue;
   text-decoration: none;
 }
 
 
-h1 {
-  font-size: 38.5px;
-}
-
-h2 {
-  font-size: 31.5px;
-  color:#99cccc;
-}
-
-h3 {
+h1{
+  margin-top: 1em;
   font-size: 5em;
   text-align: center;
-  color:#feffe6;
+  color:#E52016;
 }
 
-h4 {
+h2{
+  font-size: 31.5px;
+  text-align: center;
+  color:white;
+}
+
+h3{
+  margin-top: 1em;
+  font-size: 5em;
+  text-align: center;
+  color:#E52016;
+}
+
+h4{
   font-size: 17.5px;
-  color: #3B5998;
+  color: #E52016;
 }
 
-h5 {
+h5{
   font-size: 14px;
 }
 
-h6 {
-  font-size: 11.9px;
+h6{
+  font-size: 5em;
+  text-align: center;
+  color:white;
+  font-weight: bold;
 }
 
-/**************************
-Class Style
-**************************/
-
-#wrapper{
-  width: 100%;
-}
-
-#name, #school, #email, #github, #diet {
+#name, #school, #email, #github, #diet, #password {
 	background: transparent;
 	border: none;
 	border-bottom: 1px solid red;
 	height: 50px;
 	font-size: 24px;
 	box-shadow: none;
+	color: red;
+}
+
+#upfile {
+	color: red;
 }
 
 .regform {
@@ -151,51 +136,22 @@ Class Style
 	border-color: white; 
 }
 
-#reg input, #reg select, #reg textarea{
-	color: #000;
-}
-
-#reg textarea:focus,#reg input:focus {
-	color: gray;
-}
-
-#nav{
-  width: 100%;
-  background: -webkit-radial-gradient(circle,rgba(200,120,120,1), rgba(180,50,50,1),rgba(100,0,0,1)); 
-  background: -o-radial-gradient(circle,rgba(200,120,120,1), rgba(180,50,50,1),rgba(100,0,0,1));
-  background: -moz-radial-gradient(circle,rgba(200,120,120,1), rgba(180,50,50,1),rgba(100,0,0,1)); 
-  background: radial-gradient(circle,rgba(140,120,120,1), rgba(70,50,50,1),rgba(35,0,0,1)); 
-  position: fixed;
-  z-index: 10;
-  box-shadow: 10px 10px 10px black;
-  margin-top: -11px;
-}
-
-#hruBanner{
-  width: 45%;
-  margin-top: 5%;
-}
-
-#hruLogo{
+.banner{
     width: 40%;
+    margin-top: 5%;
+  }
+
+.red_header{
+  color: red; 
+  text-align: center;
 }
 
-#sectionBoarder{
+.container_outer{
+  display: block;
   width: 100%;
-  padding-top: 1em;
-  padding-bottom: 3em;
-  background: -webkit-radial-gradient(circle,rgba(200,120,120,1), rgba(180,50,50,1),rgba(100,0,0,1)); 
-  background: -o-radial-gradient(circle,rgba(200,120,120,1), rgba(180,50,50,1),rgba(100,0,0,1));
-  background: -moz-radial-gradient(circle,rgba(200,120,120,1), rgba(180,50,50,1),rgba(100,0,0,1)); 
-  background: radial-gradient(circle,rgba(140,120,120,1), rgba(70,50,50,1),rgba(35,0,0,1)); 
-  box-shadow: inset 0px 11px 8px -10px #CCC, inset 0px -11px 8px -10px #CCC;
-}
-
-#cent{
-  *position: relative;
-  width: 1200px;
   margin-right: auto;
   margin-left: auto;
+  *zoom: 1;
 }
 
 .container{
@@ -206,44 +162,29 @@ Class Style
   *zoom: 1;
 }
 
-
 .content{
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   position: relative;
-  max-width: 1280px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
-.registerBtn {
-  width: 200px;
-  margin-top: 30px;
-  padding: 14px 26px;
-  font-size: 14px;
-  line-height: 100%;
-  text-shadow: 0 1px rgba(0, 0, 0, 0.4);
-  color: #fff;
-  display:inline-block;
-  vertical-align: middle;
-  text-align: center;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background 0.1s ease-in-out;
-  -webkit-transition: background 0.1s ease-in-out;
-  -moz-transition: background 0.1s ease-in-out;
-  -ms-transition: background 0.1s ease-in-out;
-  -o-transition: background 0.1s ease-in-out;
-  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
-  color: #fff;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  font-family: 'Helvetica Neue', Helvetica, sans-serif;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
+#wrapper{
+  width: 100%;
 }
+
+:target:before{
+	content:"";
+	display: block;
+	height: 90px;
+	margin: -90px 0 0;
+}
+
+/******************************************************************************
+Nav Style
+******************************************************************************/
 
 .registerBtn2 {
   width: 60px;
@@ -268,15 +209,87 @@ Class Style
   -moz-border-radius: 3px;
   border-radius: 3px;
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
+}
 
+.nav_text{
+  display: block;
+  float: left;
+  transition: background .3s ease;
+  background: linear-gradient(rgba(0,0,0,1),rgba(255,255,255,0));
+  background-repeat: no-repeat;
+  background-position: 0px -100px;
+}
+
+.nav_text:hover{
+  background-position: center;
+}
+
+#nav_bg{
+  width: 100%;
+  float: left;
+  position: fixed;
+  z-index: 10;
+  top: -1px;
+}
+
+#nav_bg_mobile{
+  display: none;
+}
+
+#nav{
+  display: block;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+#nav_center{
+  *position: relative;
+  width: 1175px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/****************************************************
+Home Style
+****************************************************/
+
+.registerBtn {
+  width: 200px;
+  margin-top: 30px;
+  padding: 14px 26px;
+  font-size: 14px;
+  line-height: 100%;
+  color: #fff;
+  display:inline-block;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.1s ease-in-out;
+  -webkit-transition: background 0.1s ease-in-out;
+  -moz-transition: background 0.1s ease-in-out;
+  -ms-transition: background 0.1s ease-in-out;
+  -o-transition: background 0.1s ease-in-out;
+  color: #fff;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  
 }
 
 .registerBtn:active {
   padding-top: 15px;
   margin-bottom: -1px;
 }
-
-
 
 .registerBtn, .registerBtn:hover, .registerBtn:active {
   outline: 0 none;
@@ -285,7 +298,7 @@ Class Style
 }
 
 .registerBtn-1 {
-  background-color: #2F343B;
+  background-color: #E52016;
   box-shadow: 0px 3px 0px 0px #1F242B;
 }
 
@@ -297,24 +310,152 @@ Class Style
   box-shadow: 0px 1px 0px 0px #3293ba;
 }
 
-.log{
-  margin-top: 3em;
+#home{
+  margin-bottom: 10%;
   margin-left: auto;
   margin-right: auto;
-
+  width: 100%;
 }
 
-.mainContentDiv {
-  background:#DBFFFF;
-  margin-top:-1.9em;
+#home h1{
+  font-size: 2em;
+  text-align: center;
 }
 
-.boxItems{
-  padding: 5px;
+#home h4{
+  text-align: center;
+}
+
+#hruBanner{
+  display: block;
+  margin-top: 5%;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#hruLogo{
+  display: block;
+  width: 35%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/****************************************************
+About Style
+****************************************************/
+
+#about{
+  width: 100%;
+  background: url("hackru_6.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#about_boarder_top{
+  margin-top: -10em;
+  width: 100%;
+}
+
+#about_boarder_bottom{
+  width: 100%;
+  margin-bottom: -4em; 
+}
+
+#about p{
+  font-size: 1.4em;
+  padding-bottom: 2em;
+}
+
+/****************************************************
+Sponsor Style
+****************************************************/
+
+.sponsor_title{
+  display: block;
   float: left;
+  width: 30%;
+  font-size: 42px;
 }
 
-.mainArticle{
+#sponsors{
+  margin-top: 9%;
+  margin-bottom: 7%;
+}
+
+#sponsors img {
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  max-width: 100%;
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+
+#sponsor_banner{
+  margin-top: 6em;
+  width: 100%;
+}
+
+.gold_sponsors{
+  width: 100%;
+}
+
+.gold_sponsors img{
+  width: 35%;
+}
+
+#gold{
+  width: 100%;
+}
+
+#gold_header{
+  color: #C98910;
+}
+
+.silver_sponsors{
+  float: left;
+  width: 25%;
+}
+
+.silver_sponsors img{
+  float: left;
+  width: 100%;
+}
+
+#silver{
+  display: inline-block;
+  width: 100%;
+}
+
+#silver_header{
+  color: #A8A8A8;
+}
+
+.bronze_sponsors{
+  float: left;
+  width: 25%;
+}
+
+.bronze_sponsors img{
+  width: 67%;
+}
+
+#bronze{
+  display: inline-block;
+  width: 100%;
+}
+
+#bronze_header{
+  color: #965A38;
+}
+
+/****************************************************
+Faq Style
+****************************************************/
+
+.faq_article{
   display: inline-block;
   width: 300px;
   height: 220px;
@@ -324,126 +465,62 @@ Class Style
   margin-bottom: 12px;
 }
 
-.mainArticle h2{
+.faq_article h2{
   font-size: 22px;
   padding: 0px;
   margin-top: 0px;
-  height: auto;
 }
+
+.box_items{
+  padding: 5px;
+  float: left;
+}
+
+#faq{
+  width: 100%;
+  padding-top: 1em;
+  padding-bottom: 3em;
+  margin-bottom: 3em;
+  background: -webkit-radial-gradient(circle,#E52016, #463232,#230000); 
+  background: -o-radial-gradient(circle,#E52016, #463232,#230000);
+  background: -moz-radial-gradient(circle,#E52016, #463232,#230000); 
+  background: radial-gradient(circle, #E52016,#230000); 
+}
+
+#faq h1{
+	margin-top: 2em;
+	margin-bottom: 1em;
+	color: white;
+}
+
+/****************************************************
+Schedule Style
+****************************************************/
+
+#schedule p{
+  width: 40%;
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 16px;
+  color: red;
+  font-family: Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: bold;
+  padding-bottom: 9em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /**************************
-ID Style
+Footer Style
 **************************/
-#navLinks{
-  margin-right: auto;
-  margin-left: auto;
-}
 
-.banner{
-  width: 25%;
-  max-width: 250px;
-}
-
-#main{
-  font-size: 14em;
-  color: #7E827A;
-}
-
-#m2{
-  color:red;
-}
-
-#about{
-  font-size: 1.4em;
-}
-
-
-#sponsors img {
-  display: block;
-  height: auto;
-  margin: 0 auto;
-  max-width: 90%;
-}
-
-#bottomh{
-  font-size: 4em; 
-  text-align: center;
-}
-
-#heading{
-  display: block;
-  width: 100px;
-}
-#row1{
-  display: block;
+#footer{
   width: 100%;
 }
 
-#row2{
-  margin-top: 7em;
+#footer_background{
   width: 100%;
-  margin-bottom: -.5em;
-}
-
-#redR{
-  color: #950917;
-}
-
-#faqHead{
-  text-align: center;
-}
-
-#pitch{
-  margin-bottom: 15%;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
-
-#logger{
-  width: 100px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#pitch h1{
-  display: block;
-  font-size: 8em;
-  height: auto;
-  text-align: center;
-  font-style: i
-}
-
-#pitch h3{
-  font-size: 2em;
-  text-align: center;
-}
-
-#pitch h4{
-
-  text-align: center;
-}
-
-#faqHead{
-  width: 100%;
-  height: 400px;
-  background-color: #1D2326;
-}
-
-
-#name, #school, #email, #github, #diet {
-  background: transparent;
-  border: none;
-  border-bottom: 1px solid red;
-  height: 50px;
-  font-size: 24px;
-  width: 500px;
-  box-shadow: none;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-#bottomh{
-  font-size: 5em; 
+  margin-bottom: -10px;
 }
 
 
@@ -459,73 +536,267 @@ ID Style
     width: 46%;
 
   }
+
   .banner{
     width: 40%;
-    margin-top: 50px;
   }
-#bottomh{
-  margin-top: 0px;
-  font-size: 3em; 
-  width: 80%;
-}
+
+  .red_header{
+    font-size: 3em; 
+    width: 100%;
+  }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 400px) {
 
+#signup{
+	float: right;
+}
+
+  .content{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  h3{
+    font-size: 18px;
+  }
 
   p{
     text-align: center;
-    width: 100%;
+    width: 95%;
   }
 
   h2{
     text-align: center;
   }
 
-  .mainArticle{
-    height: auto;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto; 
-  }
-
-  #name, #school, #email, #github, #diet {
-    width: 300px;
-    color: white;
-  }
-}
-::-webkit-input-placeholder { font-family:'Source Sans Pro', sans-serif; text-align: center;}
-::-moz-placeholder {  font-family: 'Source Sans Pro', sans-serif;  text-align: center;} /* firefox 19+ */
-:-ms-input-placeholder { font-family: 'Source Sans Pro', sans-serif;  text-align: center;} /* ie */
-input:-moz-placeholder { font-family: 'Source Sans Pro', sans-serif;  text-align: center;}
-
-
-    /* FF only temp fix */
-    @-moz-document url-prefix() {
-        .custom-dropdown__select             { padding-right: .9em }
-        .custom-dropdown--large .custom-dropdown__select { padding-right: 1.3em }
-        .custom-dropdown--small .custom-dropdown__select { padding-right: .5em }
-    }
-}
-
-#upfile{
-  display: block;
-  width: 300px;
-  margin-right: auto;
-  margin-left: auto;
-  color: black;
-  background-color: white;
-}
-
-#dcon{
-  width: 300px;
-  display: block;
+fieldset{
+  font-family: sans-serif;
+  border: 5px solid #1F497D;
+  background: #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
 
-#signup{
-  float: right;
+.form-input{
+	background-color: rgba(0,0,0,0.1);
+	border-color: white;
+	width: 100%;
 }
 
+#name, #school, #email, #github, #diet, #password {
+	height: 50px;
+	font-size: 14px;
+}
+
+/******************************************************************************
+Nav Style
+******************************************************************************/
+
+#nav_bg{
+  display: none;
+}
+
+#nav_bg_mobile{
+  display: block;
+  width: 100%;
+  float: left;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+}
+
+#nav_center{
+  display: none;
+}
+
+/******************************************************************************
+Home Style
+******************************************************************************/
+
+
+#hruLogo{
+  width: 100%;
+}
+
+#hruBanner{
+  margin-top: 20%;
+  width: 90%;
+}
+
+/******************************************************************************
+About Style
+******************************************************************************/
+
+#about{
+  width: 100%;
+  background:  black; 
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#about_boarder_top{
+  display: none;
+}
+
+#about_boarder_bottom{
+  display: none;
+}
+
+#about h6{
+  font-size: 26px;
+  margin-top: 1em;
+  text-align: center;
+  width: 100%;
+}
+/******************************************************************************
+Sponsor Style
+******************************************************************************/
+
+#sponsors h1{
+  font-size: 2em;
+  width: 100%;
+}
+
+#sponsors h3{
+  font-size: 2em;
+}
+
+.sponsor_title{
+  display: block;
+  width: 90%;
+  font-size: 42px;
+}
+
+#sponsors{
+  margin-top: 9%;
+  margin-bottom: 7%;
+}
+
+#sponsors img {
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  max-width: 100%;
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+
+#sponsor_banner{
+  margin-top: 6em;
+  width: 100%;
+}
+
+#sponsor_banner img{
+  width: 90%;
+}
+
+.sponsor_desktop{
+  display: none;
+}
+
+#sponsor_banner{
+  width: 100%;
+}
+
+#sponsor_banner img{
+  width: 75%;
+}
+
+.gold_sponsors{
+  width: 100%;
+}
+
+.gold_sponsors img{
+  width: 50%;
+}
+
+#gold{
+  width: 100%;
+}
+
+.silver_sponsors{
+  float: left;
+  width: 50%;
+  height: 4em;
+}
+
+.silver_sponsors img{
+  width: 75%;
+  float:none;
+}
+
+#silver{
+  display: inline-block;
+  width: 100%;
+}
+
+.bronze_sponsors{
+  float: left;
+  width: 50%;
+  height: 3em;
+}
+
+.bronze_sponsors img{
+  width: 60%;
+}
+
+#bronze{
+  display: inline-block;
+  width: 100%;
+}
+
+/******************************************************************************
+Faq Style
+******************************************************************************/
+
+.faq_article{
+  height: auto;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+#faq{
+  width: 100%;
+  padding-top: 1em;
+  padding-bottom: 3em;
+  background: black; 
+}
+
+/******************************************************************************
+Schedule Style
+******************************************************************************/
+
+#schedule p{
+  width: 80%;
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 16px;
+  color: red;
+  font-family: Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: bold;
+  padding-bottom: 9em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/******************************************************************************
+Team Style
+******************************************************************************/
+
+/******************************************************************************
+Footer Style
+******************************************************************************/ 
+
+}
 
