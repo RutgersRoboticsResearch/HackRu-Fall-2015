@@ -1,2 +1,28 @@
+#home_pic{
+	display: block;
+	width: 50%;
+	height: auto;
+	float: right;
+}
+
+#pitch{
+	display: block;
+	width: 49%;
+	height: auto;
+	float: left;
+}
+
+#headPic{
+	margin-top: -20px;
+	padding: 0px;
+	display: none;
+	width: 100%;
+	border: 4px solid black;
+}
+
+#home{
+	margin-top: 100px;
+	height: 500px;
+}
 
 

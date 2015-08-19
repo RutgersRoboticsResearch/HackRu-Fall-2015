@@ -87,7 +87,6 @@ GEM
       mime-types
     pg (0.17.1)
     polyglot (0.3.5)
-    puma (2.13.4)
     rack (1.4.5)
     rack-cache (1.2)
       rack (>= 0.4)
@@ -179,7 +178,6 @@ DEPENDENCIES
   log_buddy
   paperclip
   pg
-  puma
   rails (= 3.2.18)
   rails_12factor
   sass-rails (~> 3.2.3)

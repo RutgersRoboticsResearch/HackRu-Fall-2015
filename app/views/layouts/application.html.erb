@@ -1,62 +1,74 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>HACKRU | Fall 2015</title>
+  <title>Rutgers Robotics Research</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
-  <%= favicon_link_tag 'favicon.ico' %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <!--NAV BEGIN -->
-  <img id = "nav_bg" src = "/assets/hackru_head.svg"/>
-  <img id = "nav_bg_mobile" src = "/assets/hackru_head_mobile.svg"/>
-  <nav id = "nav">
-    <div id = "nav_center">
-      <%= link_to image_tag("about.png", :class=> 'nav_text'), homes_path(@home, :anchor => "about")%>
-      <%= link_to image_tag("sponsors.png", :class=> 'nav_text'), homes_path(@home, :anchor => "sponsors")%>
-      <%= link_to image_tag("faq.png", :class=> 'nav_text'), homes_path(@home, :anchor => "faq")%>
-      <%= link_to image_tag("schedule.png", :class=> 'nav_text'), homes_path(@home, :anchor => "schedule")%>
-      <%= link_to image_tag("team.png", :class=> 'nav_text'), homes_path(@home, :anchor => "team")%>
-      <a class = "nav_text" href="https://www.google.com/maps/place/Rutgers+College+Avenue+Student+Center/@40.5027331,-74.4520898,15z/data=!4m2!3m1!1s0x0:0x8820e7c83ea74250"><img src="/assets/map.png"/></a>
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner" > 
+      <div class="container" >
+        <img id="brand_logo" src= "/assets/r3_thumb.png"/>
+        <%= link_to "Robotics Research", root_path, class: 'brand' %>
+        <ul class="nav">
+          <li><%= link_to "Articles", feed_path %></li>
+          <% if user_signed_in? %>
+            <li id="activity-feed"><%= link_to "Activity Feed", activities_path %></li>
+          <% end %>
+        </ul>
+          <ul class="nav pull-right">
+            <% if user_signed_in? %>
+            <li><%= link_to 'Albums', albums_path(current_user) %></li>
+            <li><%= link_to 'Friends', user_friendships_path %></li>
+            <li><%= link_to current_user.full_name, edit_user_registration_path %></li>
+            <%= link_to "Log Out", logout_path, class: 'btn btn-primary' %>
+            <% else %>
+            <%= link_to "Sign up", register_path, class: 'btn btn-success' %>
+            <%= link_to "Sign in", login_path, class: 'btn btn-primary'%>
+              <% end %>
+          </ul>
+        </div>
+      </div>
     </div>
-
-    <ul id="signup">
-      <% if user_signed_in? %>
-      <%= link_to "My Profile", edit_user_registration_path, class: 'registerBtn2 registerBtn-1'%>
-      <%= link_to "Log Out", logout_path, class: 'registerBtn2 registerBtn-1' %>
-      <% else %>
-      <%= link_to "Sign up", register_path, class: 'registerBtn2 registerBtn-1' %>
-      <%= link_to "Sign in", login_path, class: 'registerBtn2 registerBtn-1'%>
-      <% end %>
-    </ul>
-  </nav>
 
   <div class="container">
     <%= render_breadcrumbs %>
     <%flash.each do |type, message|%>
-    <div class="alert <%= flash_class type %>">
-      <button class="close" data-dismiss="alert">x</button>
-      <%= message %>
-    </div>
-    <% end %>
+        <div class="alert <%= flash_class type %>">
+          <button class="close" data-dismiss="alert">x</button>
+          <%= message %>
+        </div>
+      <% end %>
+    <%= yield %>
   </div>
-  <%= yield %>
-  <!--FOOTER BEGIN -->
-  <section id="footer">
-    <img id="footer_background" src="/assets/hackru_foot.svg">
-  </section>
-  <!-- FOOTER END -->
+ <footer id="footer">
+  <div id = "footerTop">
+    <div class="footerDetails">
+      <img id="footerImg" src= "/assets/rutgersLogoFooter.png"/>
+      <address>
+        Rutgers University<br>
+        The State University of New Jersey<br>
+        New Brunswick, NJ, 08901<br>
+      </address>
+       <a target="_blank" href="http://www.rutgers.edu/" ><img id="rutgers_logo" src= "/assets/branding_small.png"/></a>
+       <a target="_blank" href="https://twitter.com/" ><img id="twitter_logo" src= "/assets/Twitter_logo_white_small.png"/></a>
+       <a target="_blank" href="https://www.facebook.com/" ><img id="fb_logo" src= "/assets/FB-f-Logo__blue_72.png"/></a>
+      <a target="_blank" href="https://github.com/RutgersRoboticsResearch" ><img id="git_logo" src= "/assets/Octocat_small.png"/></a>
+    </div>
+  </div>
+ </footer>
 </body>
 <script id="activities-template" type="text/x-handlebars-template">
-<a class="dropdown-toggle" href='#'>Activity Feed({{count}})</a>
-<ul class="dropdown-menu">
-{{#each activities}}
-{{activityLink}}
-{{/each}}
-<li class="divider"></li>
-<li><a href="{{activityFeedLink}}">Activity Feed</a></li>
-</ul>
+  <a class="dropdown-toggle" href='#'>Activity Feed({{count}})</a>
+  <ul class="dropdown-menu">
+    {{#each activities}}
+        {{activityLink}}
+      {{/each}}
+      <li class="divider"></li>
+      <li><a href="{{activityFeedLink}}">Activity Feed</a></li>
+  </ul>
 </script>
 
 </html>
