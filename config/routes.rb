@@ -32,11 +32,13 @@ RCubed::Application.routes.draw do
   get 'feed', to: 'statuses#index',as: :feed
 
 
+  devise_scope :user do
+    root to: "devise/registrations#edit"
+  end
+
+
   root to: 'homes#index'
   
-  devise_scope :user do
-    root to: "devise/sessions#new"
-  end
 
   scope ":profile_name" do
     resources :albums do
