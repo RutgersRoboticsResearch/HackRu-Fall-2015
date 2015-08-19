@@ -7,10 +7,6 @@ html{
   -ms-text-size-adjust: 100%;
 }
 
-#signup{
-	float: left;
-}
-
 body{
   background: url("bg_pattern6.png");
   margin: 0;
@@ -182,6 +178,9 @@ h6{
 	margin: -90px 0 0;
 }
 
+#signup{
+  float: left;
+}
 /******************************************************************************
 Nav Style
 ******************************************************************************/
@@ -194,7 +193,6 @@ Nav Style
   line-height: 100%;
   text-shadow: 0 1px rgba(0, 0, 0, 0.4);
   color: #fff;
-
   text-align: center;
   cursor: pointer;
   font-weight: bold;
@@ -523,8 +521,27 @@ Footer Style
   margin-bottom: -10px;
 }
 
+@media screen and (max-width: 1400px) {
+.nav_text{
+  width: 130px;
+  display: block;
+  float: left;
+  transition: background .3s ease;
+  background: linear-gradient(rgba(0,0,0,1),rgba(255,255,255,0));
+  background-repeat: no-repeat;
+  background-position: 0px -100px;
+}
 
-@media screen and (max-width: 750px) {
+.nav_text:hover{
+  background-position: center;
+}
+}
+
+
+/******************************************************************************
+TALL SCREEN Style
+******************************************************************************/
+@media screen and (max-width: 1000px) {
   .container{
 
     width: 100%; 
@@ -545,7 +562,84 @@ Footer Style
     font-size: 3em; 
     width: 100%;
   }
+
+/******************************************************************************
+Nav Style
+******************************************************************************/
+.nav_text{
+  width: 120px;
+  display: block;
+  float: left;
+  transition: background .3s ease;
+  background: linear-gradient(rgba(0,0,0,1),rgba(255,255,255,0));
+  background-repeat: no-repeat;
+  background-position: 0px -100px;
 }
+
+.nav_text:hover{
+  background-position: center;
+}
+
+
+/******************************************************************************
+Home Style
+******************************************************************************/
+
+
+#hruLogo{
+  width: 90%;
+}
+
+#hruBanner{
+  margin-top: 15%;
+  width: 85%;
+}
+
+}
+
+
+@media screen and (max-width: 910px)  {
+.nav_text{
+  width: 80px;
+  display: block;
+  float: left;
+  transition: background .3s ease;
+  background: linear-gradient(rgba(0,0,0,1),rgba(255,255,255,0));
+  background-repeat: no-repeat;
+  background-position: 0px -100px;
+}
+
+.nav_text:hover{
+  background-position: center;
+}
+
+fieldset{
+  font-family: sans-serif;
+  border: 5px solid #1F497D;
+  background: #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3em;
+}
+
+.form-input{
+  background-color: rgba(0,0,0,0.1);
+  border-color: white;
+  width: 100%;
+}
+
+#name, #school, #email, #github, #diet, #password {
+  height: 50px;
+  font-size: 14px;
+}
+}
+
+/******************************************************************************
+MOBILE Style
+******************************************************************************/
 
 @media screen and (max-width: 400px) {
 
@@ -600,7 +694,6 @@ fieldset{
 /******************************************************************************
 Nav Style
 ******************************************************************************/
-
 #nav_bg{
   display: none;
 }

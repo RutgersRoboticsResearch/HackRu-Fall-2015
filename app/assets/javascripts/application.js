@@ -15,7 +15,7 @@
 //= require js-routes
 //= require_tree .
 
-/*
+
 window.loadedActivities = [];
 
 var addActivity = function(item){
@@ -109,4 +109,3 @@ var renderActivities = function(){
 
 window.pollInterval = window.setInterval( pollActivity, 5000 );
 pollActivity();
-*/
