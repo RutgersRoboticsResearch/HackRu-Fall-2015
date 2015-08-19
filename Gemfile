@@ -6,7 +6,7 @@ gem 'rails', '3.2.18'
 #'3.2.18'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-
+ruby '2.0.0'
 gem 'devise'
 gem 'simple_form'
 gem 'state_machine'
