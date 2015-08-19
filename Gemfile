@@ -6,7 +6,7 @@ gem 'rails', '3.2.18'
 #'3.2.18'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-ruby '2.0.0'
+
 gem 'devise'
 gem 'puma'
 gem 'simple_form'
@@ -56,6 +56,7 @@ end
 
 gem 'jquery-rails'
 
+ruby '2.0.0'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
