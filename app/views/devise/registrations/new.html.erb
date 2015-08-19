@@ -1,24 +1,30 @@
-<%= page_header do %>
-<h1>Sign Up</h1>
-<h4>to Learn, Share, and Connect</h4>
-<% end %>
-
-<div class="row">
-  <div class="span4">
-    <%= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name), html: { class: 'form-vertical' }) do |f| %>
-    <%= devise_error_messages! %>
-    <%= f.input :first_name, input_html: { class: 'input-xlarge' } %>
-    <%= f.input :last_name, input_html: { class: 'input-xlarge' } %>
-    <%= f.input :profile_name, input_html: { class: 'input-xlarge' } %>
-    <%= f.input :email, input_html: { class: 'input-xlarge' } %>
-    <%= f.input :password, input_html: { class: 'input-xlarge', autocomplete: 'off' } %>
-    <%= f.input :password_confirmation, input_html: { class: 'input-xlarge', autocomplete: 'off' } %>
-    <%= f.submit "Sign Up", class: 'btn btn-primary' %><br />
-    <%= render "devise/shared/links" %>
-
-    <% end %>
-  </div>
-  <div class="span8">
-      <img id="slamBot" src="/assets/slamBot2.jpg"/>  
-  </div>
-</div>
+<section id="wrapper">
+  <div style="width:100%; text-align: center;">
+    <div class="row">
+    <div style="padding: 80px;">
+      <%= link_to image_tag("hack_ru_logo.png", :class=> 'banner'), homes_path%>
+      <h1>Sign Up!</h1>
+    </div>
+      <div>
+          <fieldset>
+          <%= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name), html: { class: 'form-vertical' }) do |f| %>
+          <%= devise_error_messages! %>
+          <%= f.input :first_name, label: false, input_html: { class: 'form-input', id:"name",placeholder: "What is your first name?"} %>
+          <%= f.input :last_name, label: false, input_html: { class: 'form-input', id:"name",placeholder: "What is your last name?"} %>
+          <%= f.input :profile_name,label: false, input_html: { class: 'form-input',id:"name", placeholder:"What is your profile name?"} %>
+          <%= f.input :school_name,label: false, input_html: { class: 'form-input',id:"name", placeholder:"What school do you attend?"} %>
+          <%= f.input :email,label: false, input_html: { class: 'form-input', id:"email", placeholder:"Enter your email"} %>
+          <%= f.input :diet,label: false, input_html: { class: 'form-input',id:"name", placeholder:"Do you have any dietary restrictions?"} %>
+          <%= f.input :git_account,label: false, input_html: { class: 'form-input',id:"name", placeholder:"Enter your GitHub handle"} %>
+          <%= f.input :password,label: false, input_html: { class: 'form-input', id:"name", placeholder:"Enter your password", autocomplete: 'off' } %>
+          <%= f.input :password_confirmation, label: false, input_html: {class: 'form-input',id:"name", placeholder:"Re-Enter your password", autocomplete: 'off'} %>
+          <h4>Upload your resume!</h4>
+          <%= f.input :avatar, label: false ,as: :file ,input_html: {class: 'form-input', id:"upfile", type:"file", name:"resume",
+           placeholder:"Upload your Resume!"}  %>
+           <%= f.submit "Register", class: 'registerBtn registerBtn-1' %><br />
+           <% end %>
+          </fieldset>
+         </div>
+       </div>
+     </div>
+</section>

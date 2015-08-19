@@ -92,6 +92,9 @@ ActiveRecord::Schema.define(:version => 20150117180610) do
     t.string   "first_name"
     t.string   "last_name"
     t.string   "profile_name"
+    t.string   "school_name"
+    t.string   "git_account"
+    t.string   "diet"
     t.string   "email",                  :default => "", :null => false
     t.string   "encrypted_password",     :default => "", :null => false
     t.string   "reset_password_token"
