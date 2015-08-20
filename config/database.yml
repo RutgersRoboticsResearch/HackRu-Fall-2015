@@ -27,7 +27,7 @@
 development:
   adapter: postgresql
   encoding: utf8
-  database: project_development
+  database: hackru_development
   host: localhost
   pool: 5
   username: hackru
@@ -36,7 +36,7 @@ development:
 test:
   adapter: postgresql
   encoding: utf8
-  database: project_test
+  database: hackru_test
   host: localhost
   pool: 5
   username: hackru
@@ -45,7 +45,7 @@ test:
 production:
   adapter: postgresql
   encoding: utf8
-  database: project_production
+  database: hackru_production
   host: localhost
   pool: 5
   username: hackru

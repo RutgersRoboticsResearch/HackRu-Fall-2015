@@ -354,7 +354,7 @@ About Style
 
 #about{
   width: 100%;
-  background: url("hackru_6.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("hackru_6.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center;
@@ -367,12 +367,21 @@ About Style
 
 #about_boarder_bottom{
   width: 100%;
-  margin-bottom: -4em; 
+  margin-bottom: -4em;
 }
 
 #about p{
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: bold;
   font-size: 1.4em;
-  padding-bottom: 2em;
+  padding-bottom: 1em;
+  text-shadow: 1px 2px black;
+}
+
+#about h2{
+  font-weight: bold;
+  text-shadow: 1px 2px black;
+  padding-bottom: 1.5em;
 }
 
 /****************************************************
@@ -507,7 +516,6 @@ Schedule Style
 #schedule p{
   width: 40%;
   text-align: center;
-  letter-spacing: 2px;
   font-size: 16px;
   color: red;
   font-family: Helvetica, Arial, "Lucida Grande", sans-serif; 
