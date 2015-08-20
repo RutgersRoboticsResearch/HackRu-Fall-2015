@@ -1,6 +1,11 @@
 /****************************************************
 MAIN STYLE
 ****************************************************/
+.comment_avatar{
+	float: left;
+	padding-right: 1em;
+}
+
 html{
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
@@ -42,7 +47,7 @@ legend{
   margin-bottom: 30px;
   line-height: 0.8;
   z-index: 10;
-  color:#B39D74;
+  color:red;
 }
 
 fieldset{
@@ -51,7 +56,7 @@ fieldset{
   background: #ddd;
   border-radius: 5px;
   padding: 15px;
-  width: 600px;
+  width: 50%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -180,6 +185,10 @@ h6{
 
 #signup{
   float: left;
+}
+
+.red_p{
+	color: red;
 }
 /******************************************************************************
 Nav Style
@@ -508,6 +517,20 @@ Schedule Style
   margin-right: auto;
 }
 
+/******************************************************************************
+Team Style
+******************************************************************************/
+
+#team{
+  width: 100%;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  margin-bottom: -7em;
+  background: -webkit-radial-gradient(circle,#E52016, #463232,#230000); 
+  background: -o-radial-gradient(circle,#E52016, #463232,#230000);
+  background: -moz-radial-gradient(circle,#E52016, #463232,#230000); 
+  background: radial-gradient(circle, #E52016,#230000); 
+}
 /**************************
 Footer Style
 **************************/

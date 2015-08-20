@@ -7,7 +7,8 @@ class User < ActiveRecord::Base
 
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation, :remember_me,
-                  :first_name, :last_name, :profile_name, :avatar, :diet, :school_name, :git_account
+                  :first_name, :last_name, :profile_name, :avatar,:school_name, 
+                  :git_account, :diet, :resume
   
   validates :first_name, presence: true
 
@@ -19,7 +20,7 @@ class User < ActiveRecord::Base
                              with: /^[a-zA-Z0-9_-]+$/,
                              message: 'Must be formatted correctly.'
                            }
-
+  
   has_many :activities                          
   has_many :albums
   has_many :pictures
@@ -52,6 +53,8 @@ class User < ActiveRecord::Base
     large: "800x800>", medium: "300x200", small: "260x180", thumb: "80x80#"
 
   }
+
+  has_attached_file :resume
 
   #def self.get_gravatars
   #  all.each do |user|

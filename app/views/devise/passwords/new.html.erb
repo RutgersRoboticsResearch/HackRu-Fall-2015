@@ -1,19 +1,19 @@
 <%= page_header do %>
+  <img id="hruBanner" src="/assets/hru.png"/>
   <img id="hruLogo" src="/assets/hack_ru_logo.png"/>
-  <h1>Forgot your password?</h1>
+  <h1>Forgot Your Password?</h1>
 <% end %>
 
+<fieldset>
 <%= simple_form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :post }) do |f| %>
-		<fieldset>
   <%= devise_error_messages! %>
 
-  <%= f.input :email, label: false, input_html: {  class: 'form-input', id:'email',placeholder: "Email"  } %>
+  <%= f.input :email, input_html: { class: 'input-xxlarge' } %>
   
   <div class="form-actions">
-    <%= f.submit "Reset Password", class: 'registerBtn registerBtn-1' %>
-    <h2 class="red_header">You will recieve and email after you submit.</h2>
+    <%= f.submit "Send me reset password instructions", class: 'btn btn-primary' %>
   </div>
-<%= render "devise/shared/links" %>
-</fieldset>
 <% end %>
 
+<%= render "devise/shared/links" %>
+</fieldset>

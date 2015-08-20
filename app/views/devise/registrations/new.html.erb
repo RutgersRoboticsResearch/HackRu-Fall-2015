@@ -19,8 +19,7 @@
           <%= f.input :password,label: false, input_html: { class: 'form-input', id:"name", placeholder:"Enter your password", autocomplete: 'off' } %>
           <%= f.input :password_confirmation, label: false, input_html: {class: 'form-input',id:"name", placeholder:"Re-Enter your password", autocomplete: 'off'} %>
           <h4>Upload your resume!</h4>
-          <%= f.input :avatar, label: false ,as: :file ,input_html: {class: 'form-input', id:"upfile", type:"file", name:"resume",
-           placeholder:"Upload your Resume!"}  %>
+            <%= f.input :resume, as: :file %>
            <%= f.submit "Register", class: 'registerBtn registerBtn-1' %><br />
            <% end %>
           </fieldset>

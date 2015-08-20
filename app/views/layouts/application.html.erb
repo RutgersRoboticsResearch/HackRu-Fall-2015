@@ -18,13 +18,13 @@
       <%= link_to image_tag("faq.png", :class=> 'nav_text'), homes_path(@home, :anchor => "faq")%>
       <%= link_to image_tag("schedule.png", :class=> 'nav_text'), homes_path(@home, :anchor => "schedule")%>
       <%= link_to image_tag("team.png", :class=> 'nav_text'), homes_path(@home, :anchor => "team")%>
-      <%= link_to image_tag("map.png", :class=> 'nav_text'), "https://www.google.com/maps/place/Rutgers+College+Avenue+Student+Center/@40.5027331,-74.4520898,15z/data=!4m2!3m1!1s0x0:0x8820e7c83ea74250"%>
+      <%= link_to image_tag("map.png", :class=> 'nav_text'), "https://www.google.com/maps/place/Rutgers+College+Avenue+Student+Center/@40.5027331,-74.4520898,15z/data=!4m2!3m1!1s0x0:0x8820e7c83ea74250" , :target => "_blank"%>
     </div>
 
     <ul id="signup">
       <% if user_signed_in? %>
       <%= link_to "My Profile", edit_user_registration_path, class: 'registerBtn2 registerBtn-1'%>
-      <%= link_to "Log Out", logout_path, class: 'registerBtn2 registerBtn-1' %>
+      <%= link_to "Log Out", logout_path, class: 'registerBtn2 registerBtn-1' %>   
       <% else %>
       <%= link_to "Sign up", register_path, class: 'registerBtn2 registerBtn-1' %>
       <%= link_to "Sign in", login_path, class: 'registerBtn2 registerBtn-1'%>
@@ -60,3 +60,4 @@
 </script>
 
 </html>
+

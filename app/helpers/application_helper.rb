@@ -12,7 +12,6 @@ module ApplicationHelper
 	end
 	
 	def status_document_link(status)
-
 		if status.document && status.document.attachment?
 		content_tag(:span, "Attachment", class: "label label-info") +
 		link_to(status.document.attachment_file_name, status.document.attachment.url)
@@ -26,6 +25,11 @@ module ApplicationHelper
 	def avatar_profile_link(user, image_options={}, html_options={})
 		avatar_url = user.avatar? ? user.avatar.url(:thumb) : user.gravatar_url
 		link_to(image_tag(avatar_url, image_options), profile_path(user.profile_name), html_options)
+	end
+
+	def user_resume_link(user)
+		content_tag(:span, "Attachment", class: "label label-info")
+		link_to(File.basename(user.resume.to_s, "?*"), user.resume.url )
 	end
 
 	def page_header(&block)
