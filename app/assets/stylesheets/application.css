@@ -1,3 +1,5 @@
+@import url("http://fonts.googleapis.com/css?family=Montserrat");
+
 /****************************************************
 MAIN STYLE
 ****************************************************/
@@ -13,13 +15,12 @@ html{
 }
 
 body{
-  background: url("bg_pattern6.png");
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
   color: #E3CDA4;
-  background-attachment: fixed;
+  background: #ffffff;
 }
 
 header{
@@ -42,7 +43,6 @@ h1, h2, h3, legend, h6{
 }
 
 legend{
-  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
   font-size: 38.5px;  
   margin-bottom: 30px;
   line-height: 0.8;
@@ -51,7 +51,6 @@ legend{
 }
 
 fieldset{
-  font-family: sans-serif;
   border: 5px solid #1F497D;
   background: #ddd;
   border-radius: 5px;
@@ -69,7 +68,6 @@ label{
 p{
   font-size: 16px;
   color: white;
-  font-family: Helvetica, Arial, "Lucida Grande", sans-serif; 
 }
 
 a{
@@ -221,14 +219,13 @@ Nav Style
 .nav_text{
   display: block;
   float: left;
-  transition: background .3s ease;
-  background: linear-gradient(rgba(0,0,0,1),rgba(255,255,255,0));
-  background-repeat: no-repeat;
-  background-position: 0px -100px;
+  font-family: Helvetica;
+  font-size: 2em;
+  color: white;
+  margin: 1em;
 }
 
 .nav_text:hover{
-  background-position: center;
 }
 
 #nav_bg{
@@ -251,7 +248,7 @@ Nav Style
   top: 0;
   margin-left: auto;
   margin-right: auto;
-
+  background-color: #6B0000;
 }
 
 #nav_center{
@@ -318,19 +315,27 @@ Home Style
 }
 
 #home{
-  margin-bottom: 10%;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+  background-color: #990000;
+  padding-bottom: 5%;
 }
 
 #home h1{
   font-size: 2em;
   text-align: center;
+  color: white;
 }
 
 #home h4{
   text-align: center;
+  color: white;
+}
+
+#home a{
+  color: white;
+  text-shadow: none;
 }
 
 #hruBanner{
@@ -343,9 +348,20 @@ Home Style
 
 #hruLogo{
   display: block;
-  width: 35%;
+  width: 45%;
+}
+
+#main_header{
+  font-size: 13em;
+  display: block;
+  padding-top: 0.5em;
+}
+
+#branding{
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
+  padding: 5%;
 }
 
 /****************************************************
@@ -354,33 +370,22 @@ About Style
 
 #about{
   width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("hackru_6.jpg");
+  margin-top: 5%;
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-#about_boarder_top{
-  margin-top: -10em;
-  width: 100%;
-}
-
-#about_boarder_bottom{
-  width: 100%;
-  margin-bottom: -4em;
-}
-
 #about p{
-  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: bold;
   font-size: 1.4em;
   padding-bottom: 1em;
-  text-shadow: 1px 2px black;
+  color: #C60000;
 }
 
 #about h2{
+  color: #c60000;
   font-weight: bold;
-  text-shadow: 1px 2px black;
   padding-bottom: 1.5em;
 }
 
@@ -388,16 +393,13 @@ About Style
 Sponsor Style
 ****************************************************/
 
-.sponsor_title{
-  display: block;
-  float: left;
-  width: 30%;
-  font-size: 42px;
-}
-
 #sponsors{
-  margin-top: 9%;
-  margin-bottom: 7%;
+  margin-top: -6em;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #C60000;
+  padding-bottom: 4%;
 }
 
 #sponsors img {
@@ -405,13 +407,7 @@ Sponsor Style
   height: auto;
   margin: 0 auto;
   max-width: 100%;
-  margin-top: 2%;
   margin-bottom: 5%;
-}
-
-#sponsor_banner{
-  margin-top: 6em;
-  width: 100%;
 }
 
 .gold_sponsors{
@@ -419,15 +415,11 @@ Sponsor Style
 }
 
 .gold_sponsors img{
-  width: 35%;
+  width: 25%;
 }
 
 #gold{
   width: 100%;
-}
-
-#gold_header{
-  color: #C98910;
 }
 
 .silver_sponsors{
@@ -437,16 +429,12 @@ Sponsor Style
 
 .silver_sponsors img{
   float: left;
-  width: 100%;
+  width: 75%;
 }
 
 #silver{
   display: inline-block;
   width: 100%;
-}
-
-#silver_header{
-  color: #A8A8A8;
 }
 
 .bronze_sponsors{
@@ -463,8 +451,26 @@ Sponsor Style
   width: 100%;
 }
 
-#bronze_header{
-  color: #965A38;
+
+#sponsors h2{
+  color: #D90000;
+}
+
+#sponsor_header{
+  font-size: 10em;
+}
+
+#sponsor_banner{
+  width: 100%;
+}
+
+#sponsor_desktop{
+  font-size: 3em;
+  padding-bottom: 4%;
+}
+
+#co_present{
+  font-size: 6em;
 }
 
 /****************************************************
@@ -487,6 +493,11 @@ Faq Style
   margin-top: 0px;
 }
 
+.faq_article p{
+  color: white;
+  font-size: 12px;
+}
+
 .box_items{
   padding: 5px;
   float: left;
@@ -496,11 +507,7 @@ Faq Style
   width: 100%;
   padding-top: 1em;
   padding-bottom: 3em;
-  margin-bottom: 3em;
-  background: -webkit-radial-gradient(circle,#E52016, #463232,#230000); 
-  background: -o-radial-gradient(circle,#E52016, #463232,#230000);
-  background: -moz-radial-gradient(circle,#E52016, #463232,#230000); 
-  background: radial-gradient(circle, #E52016,#230000); 
+  background: #990000;
 }
 
 #faq h1{
@@ -513,14 +520,24 @@ Faq Style
 Schedule Style
 ****************************************************/
 
+#schedule {
+  width: 100%;
+  background: #990000;
+  padding-top: 2%;
+  padding-bottom: 4%;
+}
+
+#schedule h1{
+  color: white;
+}
+
 #schedule p{
-  width: 40%;
+  width: 100%;
   text-align: center;
   font-size: 16px;
-  color: red;
-  font-family: Helvetica, Arial, "Lucida Grande", sans-serif; 
+  color: white;
   font-weight: bold;
-  padding-bottom: 9em;
+  padding-top: 4em;
   margin-left: auto;
   margin-right: auto;
 }
@@ -534,11 +551,23 @@ Team Style
   padding-top: 3em;
   padding-bottom: 3em;
   margin-bottom: -7em;
-  background: -webkit-radial-gradient(circle,#E52016, #463232,#230000); 
-  background: -o-radial-gradient(circle,#E52016, #463232,#230000);
-  background: -moz-radial-gradient(circle,#E52016, #463232,#230000); 
-  background: radial-gradient(circle, #E52016,#230000); 
 }
+
+.team_article{
+  display: inline-block;
+  width: 300px;
+  height: 220px;
+  margin-top: 16px;
+  margin-left: 9px;
+  margin-right: 0px;
+  margin-bottom: 12px;
+}
+
+.team_article h2, p{
+  color: #C60000;
+  font-size: 2em;
+}
+
 /**************************
 Footer Style
 **************************/
@@ -558,7 +587,6 @@ Footer Style
   display: block;
   float: left;
   transition: background .3s ease;
-  background: linear-gradient(rgba(0,0,0,1),rgba(255,255,255,0));
   background-repeat: no-repeat;
   background-position: 0px -100px;
 }
@@ -802,7 +830,7 @@ Sponsor Style
 }
 
 #sponsors{
-  margin-top: 9%;
+  padding-bottom: 20%;
   margin-bottom: 7%;
 }
 
@@ -855,7 +883,7 @@ Sponsor Style
 }
 
 .silver_sponsors img{
-  width: 75%;
+  width: 65%;
   float:none;
 }
 
@@ -875,6 +903,7 @@ Sponsor Style
 }
 
 #bronze{
+  padding-bottom: 4%;
   display: inline-block;
   width: 100%;
 }

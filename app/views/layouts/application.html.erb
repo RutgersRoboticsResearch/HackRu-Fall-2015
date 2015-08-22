@@ -9,16 +9,14 @@
 </head>
 <body>
   <!--NAV BEGIN -->
-  <img id = "nav_bg" src = "/assets/hackru_head.svg"/>
-  <img id = "nav_bg_mobile" src = "/assets/hackru_head_mobile.svg"/>
   <nav id = "nav">
     <div id = "nav_center">
-      <%= link_to image_tag("about.png", :class=> 'nav_text'), homes_path(@home, :anchor => "about")%>
-      <%= link_to image_tag("sponsors.png", :class=> 'nav_text'), homes_path(@home, :anchor => "sponsors")%>
-      <%= link_to image_tag("faq.png", :class=> 'nav_text'), homes_path(@home, :anchor => "faq")%>
-      <%= link_to image_tag("schedule.png", :class=> 'nav_text'), homes_path(@home, :anchor => "schedule")%>
-      <%= link_to image_tag("team.png", :class=> 'nav_text'), homes_path(@home, :anchor => "team")%>
-      <%= link_to image_tag("map.png", :class=> 'nav_text'), "https://www.google.com/maps/place/Rutgers+College+Avenue+Student+Center/@40.5027331,-74.4520898,15z/data=!4m2!3m1!1s0x0:0x8820e7c83ea74250" , :target => "_blank"%>
+      <%= link_to "about", homes_path(@home, :anchor => "about"), {:class=>"nav_text"}%>
+      <%= link_to "sponsors", homes_path(@home, :anchor => "sponsors"), {:class => 'nav_text'}%>
+      <%= link_to "faq", homes_path(@home, :anchor => "faq"), {:class => 'nav_text'}%>
+      <%= link_to "schedule", homes_path(@home, :anchor => "schedule"), {:class => 'nav_text'}%>
+      <%= link_to "team", homes_path(@home, :anchor => "team"), {:class => 'nav_text'}%>
+      <%= link_to "map", "https://www.google.com/maps/place/Rutgers+College+Avenue+Student+Center/@40.5027331,-74.4520898,15z/data=!4m2!3m1!1s0x0:0x8820e7c83ea74250" , {:target => "_blank", :class => "nav_text"}%>
     </div>
 
     <ul id="signup">
@@ -44,7 +42,6 @@
   <%= yield %>
   <!--FOOTER BEGIN -->
   <section id="footer">
-    <img id="footer_background" src="/assets/hackru_foot.svg">
   </section>
   <!-- FOOTER END -->
 </body>
