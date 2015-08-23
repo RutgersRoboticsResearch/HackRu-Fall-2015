@@ -1,17 +1,16 @@
-  <div id="wrapper">
+  <div id="wrapper" class="clearfix">
 
   	<!--HOME BEGIN -->
   	<section id="home">
       <div id="branding">
         <h6 id="main_header"> hackRU </h6>
       </div>
-      <a href="register.html" class="registerBtn registerBtn-1">Sign Up!</a>
-  		<h1> October 3 &amp; 4 || College Ave. 
-  			Student Center <br>126 College Avenue, New Brunswick, NJ 08901 
+      <a href="register.html" class="registerBtn registerBtn-1">Sign Up!</a> <br>
+      <h1> October 3 &amp; 4 <br>
+        Rutgers Student Center <br>
+        126 College Avenue <br>
+        New Brunswick, NJ
   		</h1>     
-  		<h4>Interested in sponsoring? Email us at 
-  			<a href="mailto:team@hackru.org?Subject=Hello%20HackRu!">team@hackru.org</a>
-  		</h4>
   	</section>
   	<!--HOME END -->
 
@@ -19,32 +18,40 @@
   	<a name="about"></a>
   	<section id="about">
   		<div class= "container_outer">
-  			<div class="container">
-  				<h2>The organizing team at HackRU would like to invite you to be a part of the ninth biannual HackRU!</h2>
-  				<p>
-  					The event is a 24-hour hackathon held every semester at Rutgers University. We are the largest student run educational event on campus and the second oldest student run hackathon. In its 4 years, HackRU has grown from an event of 50 students to boasting over 1000 attendees at this past spring&#39s event. This fall, 800 hackers will come together to envision, create, and demo their own unique application. 
-  				</p> 
-  				<p> 
-  					At the start of the hackathon, our sponsoring companies will present their technologies. Participants will these technologies in your applications to push your hacking up to the cutting edge. Throughout the day, you will be surrounded by mentors from our sponsors and fellow hackers who will help you hack like a battle axe.
+        <div class="container">
+          <h2 id="official">The Official Rutgers Hackathon.</h2>
+          <h2>HackRU IX: You're invited.</h2>
+          <p>
+          HackRU is a biannual hackathon at Rutgers University.
+          </p>
+          <p>
+            Sponsors will provide participants (that's you!) with professional mentors, cool sponsor APIs and new technologies to hack with.
   				</p>
   				<p>
-  					At the end of 24 hours, a panel of judges will assemble and award awesome prizes.  Everyone will get fed, receive sweet swag, and meet amazing people. We promise you won’t go home hungry and without having gained knowledge.
+  					Judges will award amazing prizes to the coolest hacks. You'll get free food, quality swag and meet awesome people.
   				</p>
+          <p>
+          It's the largest student-run educational event at Rutgers, and the second oldest student-run hackathon in the country. <br>
+            HackRU started out small, in a room with less than 50 people, and in just four short years it has grown to host over 1000 individuals.
+          </p>
+          <p>
+            Come envision, build and demo your cool and original project!
+          </p>
   			</div>
   		</div>
   	</section>
   	<!--ABOUT END -->
 
 
-  	<!--FAQ Begin -->
+    <!--FAQ Begin  -->
   	<a name="faq"></a>
   	<section id="faq">
   		<div class= "container_outer">
-  			<div class= "container">
+  			<div class= "container_faq">
   				<h1>Got a Question?</h1>
 
   				<article class= "faq_article">
-  					<h2>Who can attend?</h2>
+  					<h2>Who an attend?</h2>
   					<div class="box_items">
   						<p class="faq_articleSummary">All undergraduate students from any university in the world are welcome. Students who do not attend Rutgers University must be 18 years or older or have a waiver signed by a parent or guardian.</p>
   					</div>
@@ -120,7 +127,7 @@
   					</div>
   				</article>
 
-  				<article class= "faq_article">
+  				<article class= "faq_article last">
   					<h2> You didn&#39t answer my question! </h2>
   					<div class="box_items">
   						<p class="faq_articleSummary">If you have any questions or concerns regarding HackRU contact us at team@hackru.org. We look forward to hearing from you and can&#39t wait to see you!</p>
@@ -129,14 +136,14 @@
   			</div>
   		</div>
   	</section>
-
+  
   	<!--SPONSORS BEGIN -->
   	<a name="sponsors"></a>
-  	<section id="sponsors">
+  	<section id="sponsors" class="container">
   		<div id="sponsor_banner">
-        <h1 id="sponsor_header"> hackRU </h1>
+      <h1 id="hackru_sponsor" > hackRU </h1>
   			<h2> Co-Presented by</h2>
-  			<img src="assets/sponsors/morganstanley.png">
+  			<img id="morgan_stanley" src="assets/sponsors/morganstanley.png"/>
   			<h2 id="sponsor_desktop">Is Proudly Sponsored By</h2>
   		</div>
   		<!-- Gold -->
@@ -157,6 +164,9 @@
   			<div class="bronze_sponsors"><img href="" src="assets/sponsors/namecheap.png"></div>
   			<div class="bronze_sponsors"><img href="" src="assets/sponsors/google.png"></div>
   		</div>
+  		<h4>Interested in sponsoring? Email us at 
+  			<a href="mailto:team@hackru.org?Subject=Hello%20HackRu!">team@hackru.org</a>
+  		</h4>
   	</section>
   	<!--SPONSORS END -->
 
@@ -174,59 +184,113 @@
     <section id="team">
       <div class= "container_outer">
         <div class= "container">
-          <h1>Our Team</h1>
+          <h1 id="team_header">Our Team</h1>
 
           <article class= "team_article">
+            <img src="assets/pics/michelle.jpg" class="circular"/>
             <h2>Michelle Chen</h2>
             <div class="box_items">
-              <p class="team_articleSummary">Needs a Picture and Info</p>
+              <p class="team_articleSummary">Hackathon Director</p>
+
             </div>
           </article>
 
           <article class="team_article">
-            <h2>Aedan Dispenza</h2>
+            <img src="assets/pics/jon.jpg" class="circular"/>
+            <h2>Jonathan Risinger</h2>
             <div class="box_items">
-              <p class="team_articleSummary">Needs a Picture and Info</p>
+              <p class="team_articleSummary">Web Developer</p>
             </div>
           </article>
 
           <article class= "team_article">
-            <h2> Jonathan Risinger </h2>
+            <img src="assets/pics/aedan.jpg" class="circular"/>
+            <h2> Aedan Dispenza </h2>
             <div class="box_items">
-              <p class="team_articleSummary">Needs a Picture and Info</p>
+              <p class="team_articleSummary">IT Captain</p>
             </div>
           </article>
 
+        </div> <!-- closes first container -->
+
+        <div class="container_faq">
+
           <article class= "team_article">
+            <img src="assets/pics/sakib.jpg" class="circular"/>
             <h2>Sakib Jalal</h2>
             <div class="box_items">
-              <p class="team_articleSummary">Needs a Picture and Info</p>
+              <p class="team_articleSummary">Finance Captain</p>
             </div>
           </article>
 
           <article class= "team_article">
+            <img src="assets/pics/biggie.jpg" class="circular"/>
             <h2> Biggie Emmanuel </h2>
             <div class="box_items">
-              <p class="team_articleSummary">Needs a Picture and Info</p>
+              <p class="team_articleSummary">Education Captain</p>
             </div>
           </article>
 
           <article class= "team_article">
+            <img src="assets/pics/ryan.jpg" class="circular"/>
             <h2> Ryan Morey </h2>
             <div class="box_items">
-              <p class="team_articleSummary">Needs a Picture and Info</p>
+              <p class="team_articleSummary">Education Captain</p>
             </div>
           </article>
 
           <article class= "team_article">
+            <img src="assets/pics/jungsoo.jpg" class="circular"/>
             <h2> Jungsoo Park </h2>
             <div class="box_items">
-              <p class="team_articleSummary">Needs a Picture and Info</p>
+              <p class="team_articleSummary">The Dude</p>
             </div>
           </article>
         </div>
       </div>
     </section>
   <!-- TEAM END -->
+
+  <!-- MAP BEGIN -->
+  <a name="location" ></a>
+    <section id="location">
+      <div class="container_outer">
+        <div class="container_location">
+          <h6 id="location_header"> Location </h6>
+          <div>
+            <div>
+              <iframe id="google_map" frameborder="0" height="425" src=https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3033.755630464289!2d-74.45196370000001!3d40.50278650000001!2m3!1f0!2f0!3f0!3m2!li1024!2i768!4f13.1!3m3!1m2!1s0x89c3c6555ac2d7f7%3A0x8820e7c83ea74250!2sRutgers+Student+Center!5e0!3m2!1sen!2sus!4v1440101044273" style="border:0" width="550">
+              </iframe>
+
+              <div id="location_address">
+                <p class="location_info"> Rutgers Student Center <br><br> College Avenue </p>
+              </div>
+
+                <div class="location_img_row">
+                  <a data-featherlight="image" href="http://studentcenters.rutgers.edu/" target="_blank">
+                    <img class="location_img" alt="RUSC1" src="http://www.eden.rutgers.edu/~webauthb/team_two/images/cac/rsc.gif">
+                  </a>
+                  <a data-featherlight="image" href="http://rumaps.rutgers.edu/location/college-avenue-student-center" target="_blank">
+                    <img class="location_img" alt="RUSC3" src="http://i.imgur.com/6cKkeWB.jpg">
+                  </a>
+                </div>
+
+                <div class="location_img_row" >
+                  <a data-featherlight="image" href="http://studentcenters.rutgers.edu/" target="_blank">
+                    <img class="location_img" alt="RUSC2" src="http://www.campusexplorer.com/media/560x420/Rutgers-University-Camden-53D37A45.jpg">
+                  </a>
+                  <a data-featherlight="image" href="http://rumaps.rutgers.edu/location/college-avenue-student-center" target="_blank">
+                    <img class="location_img" alt="RUSC4" src="http://imgick.nj.com/home/njo-media/width620/img/new_jersey_education/photo/rutgers-campus-student-centerjpg-2f008e74969a4e66.jpg">
+                  </a>
+                </div>
+
+                <p id="location_address">126 College Ave <br><br>New Brunswick, NJ 08901</p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- MAP END -->
 
 </div>

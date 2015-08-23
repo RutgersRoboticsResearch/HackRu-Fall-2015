@@ -3,6 +3,12 @@
 /****************************************************
 MAIN STYLE
 ****************************************************/
+
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}
+
 .comment_avatar{
 	float: left;
 	padding-right: 1em;
@@ -43,7 +49,7 @@ h1, h2, h3, legend, h6{
 }
 
 legend{
-  font-size: 38.5px;  
+  font-size: 38.5px;
   margin-bottom: 30px;
   line-height: 0.8;
   z-index: 10;
@@ -155,7 +161,7 @@ h6{
 
 .container{
   display: block;
-  width: 960px; 
+  width: 960px;
   margin-right: auto;
   margin-left: auto;
   *zoom: 1;
@@ -177,8 +183,8 @@ h6{
 :target:before{
 	content:"";
 	display: block;
-	height: 90px;
-	margin: -90px 0 0;
+	height: 70px;
+	margin: -70px 0 0;
 }
 
 #signup{
@@ -192,40 +198,67 @@ h6{
 Nav Style
 ******************************************************************************/
 
+.home_btn{
+  width: 140px;
+  display: block;
+  float: left;
+  margin-top: 5px;
+  margin-right: 1em;
+  margin-left: 1em;
+}
+
 .registerBtn2 {
-  width: 60px;
-  margin-top: 30px;
-  padding: 7px 13px;
-  font-size: 14px;
+  width: 80px;
+  padding: 10px 18px;
+  font-size: 18px;
   line-height: 100%;
   text-shadow: 0 1px rgba(0, 0, 0, 0.4);
   color: #fff;
   text-align: center;
   cursor: pointer;
   font-weight: bold;
-  transition: background 0.1s ease-in-out;
-  -webkit-transition: background 0.1s ease-in-out;
-  -moz-transition: background 0.1s ease-in-out;
-  -ms-transition: background 0.1s ease-in-out;
-  -o-transition: background 0.1s ease-in-out;
-  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+  transition: background 0.4s ease-in-out, width 0.4s ease-in-out, font-size 0.4s ease-in-out;
+  -webkit-transition: background 0.4s ease-in-out, width 0.4s ease-in-out, font-size 0.4s ease-in-out;
+  -moz-transition: background 0.4s ease-in-out, width 0.4s ease-in-out, font-size 0.4s ease-in-out;;
+  -ms-transition: background 0.4s ease-in-out, width 0.4s ease-in-out, font-size 0.4s ease-in-out;;
+  -o-transition: background 0.4s ease-in-out, width 0.4s ease-in-out, font-size 0.4s ease-in-out;;
   color: #fff;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, sans-serif;
+  display: block;
+  float:right;
+  margin-top: 4px;
+  margin-right: 1em;
+}
+
+.registerBtn-2 {
+  background-color: #E52016;
+}
+
+.registerBtn-2:hover {
+  background-color: #A62016;
+  width: 80px;
+}
+
+.registerBtn-2:active {
+  box-shadow: 0px 1px 0px 0px #3293ba;
 }
 
 .nav_text{
   display: block;
   float: left;
-  font-family: Helvetica;
+  font-family: "Montserrat", Helvetica;
   font-size: 2em;
   color: white;
   margin: 1em;
+  text-shadow: none;
+  transition: text-shadow 0.4s ease-in-out;
 }
 
 .nav_text:hover{
+  text-shadow: 1px 0px 30px yellow;
 }
 
 #nav_bg{
@@ -258,15 +291,19 @@ Nav Style
   margin-left: auto;
 }
 
+#signup{
+ float:right;
+}
+
 /****************************************************
 Home Style
 ****************************************************/
 
 .registerBtn {
-  width: 200px;
+  width: 300px;
   margin-top: 30px;
   padding: 14px 26px;
-  font-size: 14px;
+  font-size: 4em;
   line-height: 100%;
   color: #fff;
   display:inline-block;
@@ -274,16 +311,16 @@ Home Style
   text-align: center;
   cursor: pointer;
   font-weight: bold;
-  transition: background 0.1s ease-in-out;
-  -webkit-transition: background 0.1s ease-in-out;
-  -moz-transition: background 0.1s ease-in-out;
-  -ms-transition: background 0.1s ease-in-out;
-  -o-transition: background 0.1s ease-in-out;
+  transition: background 0.4s ease-in-out, width 0.4s ease-in-out, font-size 0.4s ease-in-out;
+  -webkit-transition: background 0.4s ease-in-out, width 0.4s ease-in-out, font-size 0.4s ease-in-out;
+  -moz-transition: background 0.4s ease-in-out, width 0.4s ease-in-out, font-size 0.4s ease-in-out;
+  -ms-transition: background 0.4s ease-in-out, width 0.4s ease-in-out, font-size 0.4s ease-in-out;
+  -o-transition: background 0.4s ease-in-out, width 0.4s ease-in-out, font-size 0.4s ease-in-out;
   color: #fff;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, sans-serif;
   display: block;
   margin-right: auto;
   margin-left: auto;
@@ -303,11 +340,12 @@ Home Style
 
 .registerBtn-1 {
   background-color: #E52016;
-  box-shadow: 0px 3px 0px 0px #1F242B;
 }
 
 .registerBtn-1:hover {
-  background-color: #1baae3;
+  background-color: #D62016;
+  font-size: 4em;
+  width: 350px;
 }
 
 .registerBtn-1:active {
@@ -370,7 +408,6 @@ About Style
 
 #about{
   width: 100%;
-  margin-top: 5%;
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center;
@@ -385,7 +422,9 @@ About Style
 
 #about h2{
   color: #c60000;
+  font-size: 4em;
   font-weight: bold;
+  margin-top: 6%;
   padding-bottom: 1.5em;
 }
 
@@ -394,8 +433,8 @@ Sponsor Style
 ****************************************************/
 
 #sponsors{
-  margin-top: -6em;
   width: 50%;
+  margin-top: -3%;
   margin-left: auto;
   margin-right: auto;
   color: #C60000;
@@ -446,6 +485,16 @@ Sponsor Style
   width: 67%;
 }
 
+#sponsors h4 a{
+  color: #c60000;
+}
+
+#sponsors h4{
+  text-align: center;
+  font-size: 2em;
+  color: #c60000;
+}
+
 #bronze{
   display: inline-block;
   width: 100%;
@@ -453,20 +502,25 @@ Sponsor Style
 
 
 #sponsors h2{
-  color: #D90000;
+  color: #c60000;
 }
 
-#sponsor_header{
+#hackru_sponsor{
   font-size: 10em;
+  padding-top: none;
+  color: #c60000;
 }
 
 #sponsor_banner{
   width: 100%;
+  display: block;
+  margin-top: -6em;
 }
 
 #sponsor_desktop{
   font-size: 3em;
   padding-bottom: 4%;
+  margin-top: -1.5em;
 }
 
 #co_present{
@@ -498,6 +552,14 @@ Faq Style
   font-size: 12px;
 }
 
+.container_faq{
+  display: block;
+  width: 1260px;
+  margin-right: auto;
+  margin-left: auto;
+  *zoom: 1;
+}
+
 .box_items{
   padding: 5px;
   float: left;
@@ -505,13 +567,13 @@ Faq Style
 
 #faq{
   width: 100%;
-  padding-top: 1em;
-  padding-bottom: 3em;
+  padding-top: 1px;
+  padding-bottom: 2em;
   background: #990000;
 }
 
 #faq h1{
-	margin-top: 2em;
+	margin-top: 1.5em;
 	margin-bottom: 1em;
 	color: white;
 }
@@ -550,22 +612,120 @@ Team Style
   width: 100%;
   padding-top: 3em;
   padding-bottom: 3em;
-  margin-bottom: -7em;
+}
+
+.circular {
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
 }
 
 .team_article{
   display: inline-block;
   width: 300px;
-  height: 220px;
   margin-top: 16px;
   margin-left: 9px;
   margin-right: 0px;
   margin-bottom: 12px;
 }
 
-.team_article h2, p{
+#team_header {
+  padding-bottom: 0.25em;
+}
+
+.team_article h2{
   color: #C60000;
-  font-size: 2em;
+  font-size: 1.5em;
+}
+
+.team_article p{
+  color: #c60000;
+  font-size: 1.5em;
+  width: 300px;
+  text-align: center;
+  padding: none;
+  margin: none;
+}
+/******************************************************************************
+Location Style
+******************************************************************************/
+.location_img{
+ width: 190px;
+ height: 190px;
+ padding:none;
+ margin:none;
+ border-style: solid;
+ border-width: 1px;
+ border-color: #C60000;
+ 
+ border-radius:5px;
+ padding: 4px;
+ transition: border-color .5s;
+ transition-timing-function: ease;
+}
+
+.location_img:hover{
+  border-color: #337AB7;
+
+}
+
+.location_img_row{
+  display: block;
+  float: right; 
+  width:440px;
+
+}
+
+.container_location{
+  display: block;
+  width:1040px;
+  margin-right: auto;
+  margin-left: auto;
+  *zoom: 1;
+}
+
+.location_info{
+  padding-left: 10px;
+  padding-bottom: none;
+}
+
+#google_map_div{
+
+}
+
+#google_map{
+  display: block;
+  float:left;
+  margin-right: 45px;
+}
+
+#location_address{
+  display: block;
+  float: left;
+  width: 372px;
+}
+
+#location{
+  display: block;
+  height: 1100px;
+  background: #990000;
+  color: white;
+}
+
+#location p{
+  color: white;
+  font-size: 1.5em;
+}
+
+#location_header{
+  padding-top: .6em;
+  padding-bottom: .6em;
+
 }
 
 /**************************
@@ -576,380 +736,8 @@ Footer Style
   width: 100%;
 }
 
-#footer_background{
+.footer_background{
   width: 100%;
   margin-bottom: -10px;
+  margin-top: -8em;
 }
-
-@media screen and (max-width: 1400px) {
-.nav_text{
-  width: 130px;
-  display: block;
-  float: left;
-  transition: background .3s ease;
-  background-repeat: no-repeat;
-  background-position: 0px -100px;
-}
-
-.nav_text:hover{
-  background-position: center;
-}
-}
-
-
-/******************************************************************************
-TALL SCREEN Style
-******************************************************************************/
-@media screen and (max-width: 1000px) {
-  .container{
-
-    width: 100%; 
-  }
-  h3{
-    font-size: 3em;
-  }
-  .mainArticle{
-    width: 46%;
-
-  }
-
-  .banner{
-    width: 40%;
-  }
-
-  .red_header{
-    font-size: 3em; 
-    width: 100%;
-  }
-
-/******************************************************************************
-Nav Style
-******************************************************************************/
-.nav_text{
-  width: 120px;
-  display: block;
-  float: left;
-  transition: background .3s ease;
-  background: linear-gradient(rgba(0,0,0,1),rgba(255,255,255,0));
-  background-repeat: no-repeat;
-  background-position: 0px -100px;
-}
-
-.nav_text:hover{
-  background-position: center;
-}
-
-
-/******************************************************************************
-Home Style
-******************************************************************************/
-
-
-#hruLogo{
-  width: 90%;
-}
-
-#hruBanner{
-  margin-top: 15%;
-  width: 85%;
-}
-
-}
-
-
-@media screen and (max-width: 910px)  {
-.nav_text{
-  width: 80px;
-  display: block;
-  float: left;
-  transition: background .3s ease;
-  background: linear-gradient(rgba(0,0,0,1),rgba(255,255,255,0));
-  background-repeat: no-repeat;
-  background-position: 0px -100px;
-}
-
-.nav_text:hover{
-  background-position: center;
-}
-
-fieldset{
-  font-family: sans-serif;
-  border: 5px solid #1F497D;
-  background: #ddd;
-  border-radius: 5px;
-  padding: 15px;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 3em;
-}
-
-.form-input{
-  background-color: rgba(0,0,0,0.1);
-  border-color: white;
-  width: 100%;
-}
-
-#name, #school, #email, #github, #diet, #password {
-  height: 50px;
-  font-size: 14px;
-}
-}
-
-/******************************************************************************
-MOBILE Style
-******************************************************************************/
-
-@media screen and (max-width: 400px) {
-
-#signup{
-	float: right;
-}
-
-  .content{
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    position: relative;
-    max-width: 400px;
-    margin: 0 auto;
-  }
-
-  h3{
-    font-size: 18px;
-  }
-
-  p{
-    text-align: center;
-    width: 95%;
-  }
-
-  h2{
-    text-align: center;
-  }
-
-fieldset{
-  font-family: sans-serif;
-  border: 5px solid #1F497D;
-  background: #ddd;
-  border-radius: 5px;
-  padding: 15px;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.form-input{
-	background-color: rgba(0,0,0,0.1);
-	border-color: white;
-	width: 100%;
-}
-
-#name, #school, #email, #github, #diet, #password {
-	height: 50px;
-	font-size: 14px;
-}
-
-/******************************************************************************
-Nav Style
-******************************************************************************/
-#nav_bg{
-  display: none;
-}
-
-#nav_bg_mobile{
-  display: block;
-  width: 100%;
-  float: left;
-  position: fixed;
-  z-index: 10;
-  top: 0;
-}
-
-#nav_center{
-  display: none;
-}
-
-/******************************************************************************
-Home Style
-******************************************************************************/
-
-
-#hruLogo{
-  width: 100%;
-}
-
-#hruBanner{
-  margin-top: 20%;
-  width: 90%;
-}
-
-/******************************************************************************
-About Style
-******************************************************************************/
-
-#about{
-  width: 100%;
-  background:  black; 
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-#about_boarder_top{
-  display: none;
-}
-
-#about_boarder_bottom{
-  display: none;
-}
-
-#about h6{
-  font-size: 26px;
-  margin-top: 1em;
-  text-align: center;
-  width: 100%;
-}
-/******************************************************************************
-Sponsor Style
-******************************************************************************/
-
-#sponsors h1{
-  font-size: 2em;
-  width: 100%;
-}
-
-#sponsors h3{
-  font-size: 2em;
-}
-
-.sponsor_title{
-  display: block;
-  width: 90%;
-  font-size: 42px;
-}
-
-#sponsors{
-  padding-bottom: 20%;
-  margin-bottom: 7%;
-}
-
-#sponsors img {
-  display: block;
-  height: auto;
-  margin: 0 auto;
-  max-width: 100%;
-  margin-top: 2%;
-  margin-bottom: 5%;
-}
-
-#sponsor_banner{
-  margin-top: 6em;
-  width: 100%;
-}
-
-#sponsor_banner img{
-  width: 90%;
-}
-
-.sponsor_desktop{
-  display: none;
-}
-
-#sponsor_banner{
-  width: 100%;
-}
-
-#sponsor_banner img{
-  width: 75%;
-}
-
-.gold_sponsors{
-  width: 100%;
-}
-
-.gold_sponsors img{
-  width: 50%;
-}
-
-#gold{
-  width: 100%;
-}
-
-.silver_sponsors{
-  float: left;
-  width: 50%;
-  height: 4em;
-}
-
-.silver_sponsors img{
-  width: 65%;
-  float:none;
-}
-
-#silver{
-  display: inline-block;
-  width: 100%;
-}
-
-.bronze_sponsors{
-  float: left;
-  width: 50%;
-  height: 3em;
-}
-
-.bronze_sponsors img{
-  width: 60%;
-}
-
-#bronze{
-  padding-bottom: 4%;
-  display: inline-block;
-  width: 100%;
-}
-
-/******************************************************************************
-Faq Style
-******************************************************************************/
-
-.faq_article{
-  height: auto;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto; 
-}
-
-#faq{
-  width: 100%;
-  padding-top: 1em;
-  padding-bottom: 3em;
-  background: black; 
-}
-
-/******************************************************************************
-Schedule Style
-******************************************************************************/
-
-#schedule p{
-  width: 80%;
-  text-align: center;
-  letter-spacing: 2px;
-  font-size: 16px;
-  color: red;
-  font-family: Helvetica, Arial, "Lucida Grande", sans-serif; 
-  font-weight: bold;
-  padding-bottom: 9em;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/******************************************************************************
-Team Style
-******************************************************************************/
-
-/******************************************************************************
-Footer Style
-******************************************************************************/ 
-
-}
-

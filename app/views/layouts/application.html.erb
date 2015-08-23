@@ -11,21 +11,22 @@
   <!--NAV BEGIN -->
   <nav id = "nav">
     <div id = "nav_center">
+      <%= link_to image_tag("hack_ru_logo.png", :class => 'home_btn'), homes_path%>
       <%= link_to "about", homes_path(@home, :anchor => "about"), {:class=>"nav_text"}%>
-      <%= link_to "sponsors", homes_path(@home, :anchor => "sponsors"), {:class => 'nav_text'}%>
       <%= link_to "faq", homes_path(@home, :anchor => "faq"), {:class => 'nav_text'}%>
+      <%= link_to "sponsors", homes_path(@home, :anchor => "sponsors"), {:class => 'nav_text'}%>
       <%= link_to "schedule", homes_path(@home, :anchor => "schedule"), {:class => 'nav_text'}%>
       <%= link_to "team", homes_path(@home, :anchor => "team"), {:class => 'nav_text'}%>
-      <%= link_to "map", "https://www.google.com/maps/place/Rutgers+College+Avenue+Student+Center/@40.5027331,-74.4520898,15z/data=!4m2!3m1!1s0x0:0x8820e7c83ea74250" , {:target => "_blank", :class => "nav_text"}%>
+      <%= link_to "location", homes_path(@home, :anchor => "location"), {:class => 'nav_text'}%>
     </div>
 
     <ul id="signup">
       <% if user_signed_in? %>
-      <%= link_to "My Profile", edit_user_registration_path, class: 'registerBtn2 registerBtn-1'%>
-      <%= link_to "Log Out", logout_path, class: 'registerBtn2 registerBtn-1' %>   
+      <%= link_to "My Profile", edit_user_registration_path, class: 'registerBtn2 registerBtn-2'%>
+      <%= link_to "Log Out", logout_path, class: 'registerBtn2 registerBtn-2' %>   
       <% else %>
-      <%= link_to "Sign up", register_path, class: 'registerBtn2 registerBtn-1' %>
-      <%= link_to "Sign in", login_path, class: 'registerBtn2 registerBtn-1'%>
+      <%= link_to "Sign up", register_path, class: 'registerBtn2 registerBtn-2' %>
+      <%= link_to "Sign in", login_path, class: 'registerBtn2 registerBtn-2'%>
       <% end %>
     </ul>
   </nav>
@@ -42,6 +43,7 @@
   <%= yield %>
   <!--FOOTER BEGIN -->
   <section id="footer">
+    <%= image_tag("hackru_foot.svg", :class => 'footer_background')%>
   </section>
   <!-- FOOTER END -->
 </body>
