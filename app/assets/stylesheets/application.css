@@ -428,6 +428,10 @@ About Style
   padding-bottom: 1.5em;
 }
 
+#official_mobile {
+  display: none;
+}
+
 /****************************************************
 Sponsor Style
 ****************************************************/
@@ -467,7 +471,6 @@ Sponsor Style
 }
 
 .silver_sponsors img{
-  float: left;
   width: 75%;
 }
 
@@ -503,6 +506,7 @@ Sponsor Style
 
 #sponsors h2{
   color: #c60000;
+  padding-bottom: -5%;
 }
 
 #hackru_sponsor{
@@ -525,6 +529,10 @@ Sponsor Style
 
 #co_present{
   font-size: 6em;
+}
+
+#sponsor_official_mobile {
+  display: none;
 }
 
 /****************************************************
@@ -551,6 +559,11 @@ Faq Style
   color: white;
   font-size: 12px;
 }
+
+/*#article_1 {
+  height: 50px;
+  overflow: hidden;
+}*/
 
 .container_faq{
   display: block;
@@ -593,7 +606,7 @@ Schedule Style
   color: white;
 }
 
-#schedule p{
+#schedule_official {
   width: 100%;
   text-align: center;
   font-size: 16px;
@@ -604,13 +617,17 @@ Schedule Style
   margin-right: auto;
 }
 
+#schedule_mobile {
+  display: none;
+}
+
 /******************************************************************************
 Team Style
 ******************************************************************************/
 
 #team{
   width: 100%;
-  padding-top: 3em;
+  margin-top: 1em;
   padding-bottom: 3em;
 }
 
@@ -634,16 +651,24 @@ Team Style
   margin-bottom: 12px;
 }
 
+.team_article_mobile {
+  display: none;
+}
+
 #team_header {
   padding-bottom: 0.25em;
 }
 
-.team_article h2{
+#name_official {
   color: #C60000;
   font-size: 1.5em;
 }
 
-.team_article p{
+#name_mobile {
+  display: none;
+}
+
+.team_article p {
   color: #c60000;
   font-size: 1.5em;
   width: 300px;
@@ -651,34 +676,36 @@ Team Style
   padding: none;
   margin: none;
 }
+
+.team_articleSummary {
+  display: none;
+}
+
 /******************************************************************************
 Location Style
 ******************************************************************************/
 .location_img{
- width: 190px;
- height: 190px;
- padding:none;
- margin:none;
- border-style: solid;
- border-width: 1px;
- border-color: #C60000;
- 
- border-radius:5px;
- padding: 4px;
- transition: border-color .5s;
- transition-timing-function: ease;
+  width: 190px;
+  height: 190px;
+  padding:none;
+  margin:none;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #C60000;
+  border-radius:5px;
+  padding: 4px;
+  transition: border-color .5s;
+  transition-timing-function: ease;
 }
 
 .location_img:hover{
   border-color: #337AB7;
-
 }
 
 .location_img_row{
   display: block;
-  float: right; 
+  float: right;
   width:440px;
-
 }
 
 .container_location{
@@ -741,3 +768,372 @@ Footer Style
   margin-bottom: -10px;
   margin-top: -8em;
 }
+
+/**************************
+Mobile Style
+**************************/
+
+@media screen and (max-width: 460px) {
+
+  /**************************
+  General Mobile Style
+  **************************/
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  /**************************
+  Nav Mobile Style
+  **************************/
+  #nav {
+    display: none;
+  }
+
+  /**************************
+  Home Mobile Style
+  **************************/
+  #main_header {
+    font-size: 5em;
+  }
+
+  .registerBtn {
+    width: 200px;
+    font-size: 2em;
+  }
+
+  .registerBtn-1:hover {
+    font-size: 2em;
+    width: 200px;
+  }
+
+  #home h1 {
+    margin-bottom: 5%;
+  }
+
+  /**************************
+  About Mobile Style
+  **************************/
+  #about h2 {
+    font-size: 2.8em;
+  }
+
+  #about p {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    line-height: 120%;
+  }
+
+  #official {
+    display: none;
+  }
+
+  #official_mobile {
+    width: 85%;
+    padding-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  /**************************
+  Faq Mobile Style
+  **************************/
+  #faq {
+    padding-bottom: 40%;
+  }
+
+  .container_faq {
+    width: 100%;
+  }
+
+  .container_faq h1 {
+    font-size: 3em;
+  }
+
+  .faq_article {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .faq_article h2 {
+    font-size: 2em;
+  }
+
+  .faq_article p {
+    font-size: 1.5em;
+    line-height: 120%;
+  }
+
+  /**************************
+  Sponsor Mobile Style
+  **************************/
+  #sponsors{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #C60000;
+    padding-top: 20%;
+    padding-bottom: 4%;
+  }
+
+  #sponsors img {
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    max-width: 90%;
+    margin-bottom: 12%;
+  }
+
+  .gold_sponsors{
+    width: 100%;
+    margin-bottom: -10%;
+  }
+
+  .gold_sponsors img{
+    width: 40%;
+  }
+
+  #gold{
+    width: 100%;
+  }
+
+  .silver_sponsors{
+    float: left;
+    width: 50%;
+    margin-bottom: -10%;
+  }
+
+  .silver_sponsors img{
+    width: 75%;
+  }
+
+  #silver{
+    display: inline-block;
+    width: 100%;
+  }
+
+  #bronze{
+    margin-top: 7%;
+    display: inline-block;
+    width: 100%;
+  }
+
+  .bronze_sponsors{
+    float: left;
+    width: 50%;
+  }
+
+  .bronze_sponsors img{
+    width: 60%;
+  }
+
+  #sponsors h4 a{
+    color: #c60000;
+  }
+
+  #sponsors h4{
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 120%;
+    color: #c60000;
+  }
+
+  #sponsors h2{
+    width: 100%;
+    color: #c60000;
+    margin-bottom: -1%;
+  }
+
+  #hackru_sponsor{
+    font-size: 4em;
+    padding-top: none;
+    padding-bottom: 5%;
+    color: #c60000;
+  }
+
+  #sponsor_desktop{
+    font-size: 2em;
+    padding-bottom: 4%;
+  }
+
+  #sponsor_official {
+    display: none;
+  }
+
+  #sponsor_official_mobile {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: -2%;
+  }
+
+  /*************************
+  Schedule Mobile Style
+  **************************/
+  #schedule {
+    width: 100%;
+  }
+
+  #schedule_official {
+    display: none;
+  }
+
+  #schedule_mobile {
+    width: 80%;
+    font-size: 2em;
+    padding-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 120%;
+    display: block;
+    text-align: center;
+  }
+
+  #schedule h1{
+    font-size: 4em;
+  }
+
+  /*************************
+  Team Mobile Style
+  **************************/
+
+  #team{
+    width: 100%;
+    padding-top: 0.5em;
+    padding-bottom: 3em;
+  }
+
+  .circular {
+    width: 80%;
+    height: 80%;
+    border-radius: 40%;
+    -webkit-border-radius: 40%;
+    -moz-border-radius: 40%;
+  }
+
+  .team_article{
+    display: inline-block;
+    width: 30%;
+  }
+
+  .team_article_mobile {
+    display: inline-block;
+    width: 30%;
+    margin-left: auto;
+    margin-right: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  #team_header {
+    padding-bottom: 0.25em;
+    font-size: 4em;
+    font-weight: bold;
+  }
+
+  .team_article h2{
+    color: #C60000;
+    font-size: 1em;
+    text-align: center;
+  }
+
+  .team_articleSummary {
+    display: none;
+  }
+
+  #name_official {
+    display: none;
+  }
+
+  #name_mobile {
+    color: #C60000;
+    font-size: 1.1em;
+    display: block;
+  }
+
+  #name_mobile a {
+    color: #C60000;
+    font-size: 1em;
+  }
+
+  /************************
+  Location Mobile Style
+  ************************/
+  #location_header{
+    font-size: 4em;
+  }
+
+  .location_img{
+    width: 190px;
+    height: 190px;
+    padding:none;
+    margin:none;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #C60000;
+    border-radius:5px;
+    padding: 4px;
+    transition: border-color .5s;
+    transition-timing-function: ease;
+  }
+
+  .location_img_row{
+    display: block;
+    float: none;
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .container_location{
+    display: block;
+    width: 100%;
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+    *zoom: 1;
+  }
+
+  .location_info{
+    padding-left: 10px;
+    padding-bottom: none;
+  }
+
+  #google_map{
+    width: 85%;
+    display: block;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #location_address{
+    display: block;
+    text-align: center;
+    width: 80%;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2%;
+  }
+
+  #location{
+    display: block;
+    width: 100%;
+    background: #990000;
+    color: white;
+    padding-bottom: 150px;
+  }
+
+  #location p{
+    color: white;
+    font-size: 1.5em;
+  }

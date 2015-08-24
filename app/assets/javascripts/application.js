@@ -109,3 +109,20 @@ var renderActivities = function(){
 
 window.pollInterval = window.setInterval( pollActivity, 5000 );
 pollActivity();
+*/
+
+function toggle_faq_article(x) {
+  var article = document.getElementById(x);
+  var faq_arrow = document.getElementById("faq_arrow");
+  var max_height = "300px";
+  if (faq_arrow.innerHTML == "a") {
+    article.style.color = "cyan";
+    faq_arrow.innerHTML = "b";
+    article.style.height = "50px";
+  } else {
+    article.style.color = "green";
+    faq_arrow.innerHTML = "a";
+    article.style.height = "500px";
+  }
+}
+
