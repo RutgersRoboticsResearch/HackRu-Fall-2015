@@ -1,18 +1,16 @@
 <section id="wrapper">
-  <div style="width:100%; text-align: center;">
-    <h1 class="main">
-      <%= link_to image_tag("hack_ru_logo.png", :class=> 'banner'), homes_path%>
-    </h1>
 
     <%= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put, class: 'form-horizontal '}) do |f| %>
     <%= devise_error_messages! %>
+    <!--
     <fieldset>
       <legend>Communication</legend>
       <%= link_to "HackRU Feed", feed_path, class: 'registerBtn2 registerBtn-1' %>
       <%= link_to 'Friends', user_friendships_path, class: 'registerBtn2 registerBtn-1' %>
       <%= link_to 'Albums', albums_path(current_user), class: 'registerBtn2 registerBtn-1' %>
     </fieldset>
-    <h1>Edit My Profile</h1>
+    -->
+    <h1 class="form_head">Edit My Profile</h1>
     <fieldset>
       <legend>Profile Avatar</legend>
       <%= bootstrap_paperclip_picture f, :avatar %>

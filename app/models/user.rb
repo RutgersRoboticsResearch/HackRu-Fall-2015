@@ -94,5 +94,8 @@ class User < ActiveRecord::Base
     activity
   end
 
+  def send_welcome_email
+    UserNotifier.welcome_email(id).deliver
+  end
 
 end
