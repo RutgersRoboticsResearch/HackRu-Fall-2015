@@ -367,6 +367,7 @@ Home Style
   width: 100%;
   background-color: #990000;
   padding-bottom: 5%;
+  margin-top: 0;
 }
 
 #home h1{
@@ -428,6 +429,8 @@ About Style
 }
 
 #about p{
+  text-align: justify;
+  line-height: 130%;
   font-weight: bold;
   font-size: 1.4em;
   padding-bottom: 1em;
@@ -825,7 +828,7 @@ Footer Style
     margin-left: auto;
     margin-right: auto;
     display: block;
-    line-height: 120%;
+    line-height: 130%;
   }
 
   #faq {
@@ -849,7 +852,7 @@ Footer Style
   }
 
   #command_container {
-    width: 960px;
+    width: 100%;
   }
   
   .location_img_row {
@@ -941,7 +944,11 @@ Footer Style
   }
 
   #nav_center {
-    width: 100%;
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: inherit;
   }
 
   .nav_text{
@@ -1053,7 +1060,7 @@ Footer Style
   ul li input[type=checkbox] {
     position: absolute;
     cursor: pointer;
-    width: 100%;
+    width: 50%;
     height: 100%;
     z-index: 1;
     opacity: 0;
@@ -1112,6 +1119,11 @@ Footer Style
     background-color: #990000;
     padding-bottom: 2%;
     padding-top: 5%;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   #faq_mobile h1 {
@@ -1124,7 +1136,7 @@ Footer Style
     color: white;
     font-family: inherit;
     display: block;
-    width: 85%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -1279,6 +1291,10 @@ Footer Style
 **************************/
 @media screen and (max-width: 759px) {
 
+  #about p {
+    text-align: left;
+  }
+
   #main_header {
     font-size: 6em;
   }
@@ -1289,6 +1305,7 @@ Footer Style
 
   #nav_center {
     float: none;
+    width: 560px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -1355,6 +1372,10 @@ Mobile Style
     width: 200px;
   }
 
+  #home {
+    margin-top: -40px;
+  }
+
   #home h1 {
     margin-bottom: 5%;
     font-size: 1.5em;
@@ -1372,7 +1393,7 @@ Mobile Style
     margin-left: auto;
     margin-right: auto;
     display: block;
-    line-height: 120%;
+    line-height: 130%;
   }
 
   /**************************
@@ -1681,8 +1702,9 @@ Mobile Style
 }
 
 /**************************
- Kindle Fires Edge Case
+ * Edge Case
 **************************/
+
 @media screen and (max-width: 374px) {
   #main_header {
     padding-top: 15%;
