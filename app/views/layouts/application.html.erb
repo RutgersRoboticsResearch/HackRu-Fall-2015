@@ -6,12 +6,13 @@
   <%= javascript_include_tag "application" %>
   <%= favicon_link_tag 'favicon.ico' %>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
   <!--NAV BEGIN -->
   <nav id = "nav">
     <div id = "nav_center">
-      <%= link_to image_tag("hack_ru_logo.png", :class => 'home_btn'), homes_path%>
+      <div id="hackru_penguin"><%= link_to image_tag("hack_ru_logo.png", :class => 'home_btn'), homes_path%></div>
       <%= link_to "about", homes_path(@home, :anchor => "about"), {:class=>"nav_text"}%>
       <%= link_to "faq", homes_path(@home, :anchor => "faq"), {:class => 'nav_text'}%>
       <%= link_to "sponsors", homes_path(@home, :anchor => "sponsors"), {:class => 'nav_text'}%>
@@ -22,11 +23,11 @@
 
     <ul id="signup">
       <% if user_signed_in? %>
-      <%= link_to "My Profile", edit_user_registration_path, class: 'registerBtn2 registerBtn-2'%>
-      <%= link_to "Log Out", logout_path, class: 'registerBtn2 registerBtn-2' %>   
+        <%= link_to "My Profile", edit_user_registration_path, class: 'registerBtn2 registerBtn-2'%>
+        <%= link_to "Log Out", logout_path, class: 'registerBtn2 registerBtn-2' %>
       <% else %>
-      <%= link_to "Sign up", register_path, class: 'registerBtn2 registerBtn-2' %>
-      <%= link_to "Sign in", login_path, class: 'registerBtn2 registerBtn-2'%>
+        <%= link_to "Sign up", register_path, class: 'registerBtn2 registerBtn-2' %>
+        <%= link_to "Sign in", login_path, class: 'registerBtn2 registerBtn-2'%>
       <% end %>
     </ul>
   </nav>
