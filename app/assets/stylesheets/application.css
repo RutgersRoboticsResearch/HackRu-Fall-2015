@@ -401,7 +401,7 @@ Home Style
 #main_header{
   font-size: 13em;
   display: block;
-  padding-top: 0.5em;
+  padding-top: 1em;
 }
 
 #branding{
@@ -693,6 +693,7 @@ Team Style
 
 #name_mobile {
   display: none;
+  font-weight: bold;
 }
 
 .team_article p {
@@ -806,6 +807,7 @@ Footer Style
 
   #main_header {
     font-size: 8em;
+    padding-bottom: 5%;
   }
 
   .registerBtn {
@@ -1015,8 +1017,7 @@ Footer Style
     margin: 0;
     padding-bottom: 4px;
     padding-top: 18px;
-    /*border-top: 1px dotted #dce7eb;*/
-    border-top: 1px dotted #bb0000;
+    border-top: 1px dotted #660000;
   }
   ul li:nth-of-type(1) {
     animation-delay: 0.5s;
@@ -1033,8 +1034,8 @@ Footer Style
   ul li i {
     position: absolute;
     transform: translate(-6px, 0);
-    margin-top: 16px;
-    right: 30px;
+    margin-top: 12px;
+    right: 0;
   }
   ul li i:before, ul li i:after {
     content: "";
@@ -1094,6 +1095,14 @@ Footer Style
     }
   }
 
+  #swag {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    text-align: center;
+  }
+
   #faq {
     display: none;
   }
@@ -1115,7 +1124,7 @@ Footer Style
     color: white;
     font-family: inherit;
     display: block;
-    width: 75%;
+    width: 85%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -1140,10 +1149,15 @@ Footer Style
   }
 
   #sponsors{
-    margin-top: 20%;
+    margin-top: 15%;
     width: 85%;
+    font-weight: bold;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  #sponsors h2 {
+    font-weight: bold;
   }
 
   #hackru_sponsor{
@@ -1166,8 +1180,9 @@ Footer Style
     font-size: 4em;
   }
 
-  #team_article {
+  .team_article {
     width: 100%;
+    padding-left: 1%;
   }
 
   #team{
@@ -1209,6 +1224,53 @@ Footer Style
     color: #C60000;
     font-size: 1em;
     text-align: center;
+  }
+
+  #name_official {
+    display: none;
+  }
+
+  #name_mobile {
+    color: #C60000;
+    font-size: 1.5em;
+    display: block;
+  }
+
+  #name_mobile a {
+    color: #C60000;
+    font-size: 1em;
+  }
+
+  .container_faq {
+    width: 100%;
+  }
+
+  .container_faq h1 {
+    font-size: 3em;
+  }
+
+  #location {
+    width: 100%;
+  }
+
+  .container_outer {
+    width: 100%;
+  }
+
+  .container_location {
+    width: 100%;
+  }
+
+  #command_container {
+    width: 100%;
+  }
+
+  .location_info {
+    padding-top: 3%;
+    text-align: center;
+    float: none;
+    width: 100%;
+  }
 
 }
 
@@ -1233,7 +1295,7 @@ Footer Style
   }
 
   .nav_text {
-    font-size: 1em;
+    font-size: 1.3em;
   }
 
 }
@@ -1266,6 +1328,12 @@ Mobile Style
   /**************************
   Nav Mobile Style
   **************************/
+
+  #nav {
+    height: 60px;
+    width: 100%;
+  }
+
   #nav_center {
     display: none;
   }
@@ -1314,14 +1382,6 @@ Mobile Style
     padding-bottom: 10%;
   }
 
-  .container_faq {
-    width: 100%;
-  }
-
-  .container_faq h1 {
-    font-size: 3em;
-  }
-
   .faq_article {
     width: 100%;
     height: auto;
@@ -1344,13 +1404,13 @@ Mobile Style
 
   .box_items{
     float: none;
-    width: 80%%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
 
   #faq_mobile h2 {
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
 
   /**************************
@@ -1361,7 +1421,7 @@ Mobile Style
     margin-left: auto;
     margin-right: auto;
     color: #C60000;
-    padding-top: 20%;
+    padding-top: 1%;
     padding-bottom: 4%;
   }
 
@@ -1430,12 +1490,14 @@ Mobile Style
   #sponsors h2{
     width: 100%;
     color: #c60000;
+    font-weight: bold;
     font-size: 1.5em;
     margin-bottom: -1%;
   }
 
   #hackru_sponsor{
     font-size: 4em;
+    font-weight: bold;
     padding-top: -20em;
     padding-bottom: 5%;
     color: #c60000;
@@ -1453,6 +1515,10 @@ Mobile Style
     margin-top: -2%;
   }
 
+  #sponsor_desktop {
+    margin-top: -2em;
+  }
+
   /*************************
   Schedule Mobile Style
   **************************/
@@ -1467,7 +1533,7 @@ Mobile Style
 
   #schedule_mobile {
     width: 80%;
-    font-size: 1.8em;
+    font-size: 1.3em;
     padding-top: 1em;
     margin-left: auto;
     margin-right: auto;
@@ -1519,6 +1585,10 @@ Mobile Style
     color: #c60000;
   }
 
+  #name_mobile {
+    font-size: 1.1em;
+  }
+
   .team_article h2{
     color: #C60000;
     font-size: 1em;
@@ -1527,21 +1597,6 @@ Mobile Style
 
   .team_articleSummary {
     display: none;
-  }
-
-  #name_official {
-    display: none;
-  }
-
-  #name_mobile {
-    color: #C60000;
-    font-size: 1.1em;
-    display: block;
-  }
-
-  #name_mobile a {
-    color: #C60000;
-    font-size: 1em;
   }
 
   /************************
@@ -1606,6 +1661,7 @@ Mobile Style
     background: #990000;
     color: white;
     padding-top: 1em;
+    padding-bottom: 5%;
   }
 
   #location p{
@@ -1622,6 +1678,16 @@ Mobile Style
     margin-top: -10%;
   }
 
+}
+
+/**************************
+ Kindle Fires Edge Case
+**************************/
+@media screen and (max-width: 374px) {
+  #main_header {
+    padding-top: 15%;
+    font-size: 3em;
+  }
 }
 
 
