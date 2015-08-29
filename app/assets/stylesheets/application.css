@@ -171,6 +171,14 @@ h6{
   *zoom: 1;
 }
 
+.container_home {
+  width: 700px;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
 .content{
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -429,7 +437,7 @@ About Style
 }
 
 #about p{
-  text-align: justify;
+  text-align: center;
   line-height: 130%;
   font-weight: bold;
   font-size: 1.4em;
@@ -1284,6 +1292,10 @@ Footer Style
     width: 100%;
   }
 
+  #home {
+    margin-top: -40px;
+  }
+
 }
 
 /**************************
@@ -1291,8 +1303,8 @@ Footer Style
 **************************/
 @media screen and (max-width: 759px) {
 
-  #about p {
-    text-align: left;
+  .container_home {
+    width: 100%;
   }
 
   #main_header {
@@ -1335,11 +1347,15 @@ Mobile Style
     display: block;
   }
 
-  .container_outer{
+  .container_outer {
     width: 100%;
     float: none;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .container_home {
+    width: 100%;
   }
 
   /**************************
