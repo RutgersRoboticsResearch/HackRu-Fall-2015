@@ -57,13 +57,25 @@ legend{
 }
 
 fieldset{
-  border: 5px solid #c60000;
+  font-family: sans-serif;
+  border: 5px solid #1F497D;
   background: #ddd;
   border-radius: 5px;
   padding: 15px;
-  width: 50%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.form-input{
+  background-color: rgba(0,0,0,0.1);
+  border-color: white;
+  width: 100%;
+}
+
+#name, #school, #email, #github, #diet, #password {
+  height: 50px;
+  font-size: 14px;
 }
 
 label{
@@ -125,7 +137,27 @@ h6{
 	height: 50px;
 	font-size: 24px;
 	box-shadow: none;
-	color: red;
+	color: #c60000;
+}
+
+::-webkit-input-placeholder {
+ color: #c60000;
+ opacity: 1 !important;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+ color: #c60000;  
+ opacity: 1 !important;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+ color: #c60000;  
+ opacity: 1 !important;
+}
+
+:-ms-input-placeholder {  
+ color: #c60000;  
+ opacity: 1 !important;
 }
 
 #upfile {
@@ -146,9 +178,9 @@ h6{
 }
 
 .banner{
-    width: 40%;
-    margin-top: 5%;
-  }
+  width: 40%;
+  margin-top: 5%;
+}
 
 .red_header{
   color: red; 
@@ -208,8 +240,8 @@ h6{
 }
 
 .form_head{
-   margin-top: 6%;
-   margin-bottom: 2%; 
+ margin-top: 6%;
+ margin-bottom: 2%; 
 }
 
 /******************************************************************************
@@ -798,17 +830,69 @@ Location Style
 Footer Style
 **************************/
 
-#footer{
+footer{
+  margin-bottom: 0px;
   width: 100%;
+
+}
+#footerTop{
+  background: black;
+  height: 200px;
 }
 
-.footer_background{
-  width: 100%;
-  margin-bottom: -10px;
-  margin-top: -8em;
+#footerBottom{
+  background: #333333;
+}
+
+#footerImg{
+  display: inline-block;
+}
+
+#copyDetails{
+  display: inline-block;
+  text-align: center;
+  color: #F0F0F0;
+}
+
+.footerDetails{
+  width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 6.5em;
+}
+
+address{
+  margin-top: 2em;
+  display: inline-block;
+  color: white;
+  font-family: Georgia;
+  font-style: normal;
+}
+#footerLinks{
+  border-left:solid;
+  border-width:1px;
+  border-color: gray;
+  list-style-type: none;
+  margin-top: 4em;
+  float: right;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: .9em;
+}
+.footerLink a{
+  text-decoration: none;
+  color: gray;
+}
+.footerLink{
+  margin: .7em;
+}
+#footerLogo{
+  position: relative;
+  float: right;
 }
 
 @media screen and (max-width: 1280px) {
+
 
   #branding {
     margin-top: 50px;
@@ -1300,9 +1384,11 @@ Footer Style
 
 /**************************
  Kindle Fires Edge Case
-**************************/
-@media screen and (max-width: 759px) {
-
+ **************************/
+ @media screen and (max-width: 759px) {
+.footerDetails{
+  width: 100%;
+}
   .container_home {
     width: 100%;
   }
@@ -1325,6 +1411,29 @@ Footer Style
 
   .nav_text {
     font-size: 1.3em;
+  }
+
+  fieldset{
+    font-family: sans-serif;
+    border: 5px solid #1F497D;
+    background: #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3em;
+  }
+
+  .form-input{
+    background-color: rgba(0,0,0,0.1);
+    border-color: white;
+    width: 100%;
+  }
+
+  #name, #school, #email, #github, #diet, #password {
+    height: 50px;
+    font-size: 14px;
   }
 
 }
@@ -1356,6 +1465,28 @@ Mobile Style
 
   .container_home {
     width: 100%;
+  }
+
+  fieldset{
+    font-family: sans-serif;
+    border: 5px solid #1F497D;
+    background: #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .form-input{
+    background-color: rgba(0,0,0,0.1);
+    border-color: white;
+    width: 100%;
+  }
+
+  #name, #school, #email, #github, #diet, #password {
+    height: 50px;
+    font-size: 14px;
   }
 
   /**************************
@@ -1719,9 +1850,9 @@ Mobile Style
 
 /**************************
  * Edge Case
-**************************/
+ **************************/
 
-@media screen and (max-width: 374px) {
+ @media screen and (max-width: 374px) {
   #main_header {
     padding-top: 15%;
     font-size: 3em;

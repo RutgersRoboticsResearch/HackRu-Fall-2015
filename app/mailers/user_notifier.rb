@@ -1,5 +1,5 @@
 class UserNotifier < ActionMailer::Base
-  default from: "from@hackRU.com"
+  default from: "example.com"
 
   def friend_requested(user_friendship_id)
   	user_friendship = UserFriendship.find(user_friendship_id)
