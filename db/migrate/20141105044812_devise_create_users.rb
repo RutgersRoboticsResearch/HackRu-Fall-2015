@@ -7,6 +7,8 @@ class DeviseCreateUsers < ActiveRecord::Migration
       t.string :school_name
       t.string :git_account
       t.string :diet
+      t.string :tshirt_size
+      t.string :special_needs
 
       ## Database authenticatable
       t.string :email,              null: false, default: ""

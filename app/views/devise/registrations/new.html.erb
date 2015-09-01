@@ -6,9 +6,11 @@
     <%= f.input :first_name, label: false, input_html: { class: 'form-input', id:"name",placeholder: "What is your first name?"} %>
     <%= f.input :last_name, label: false, input_html: { class: 'form-input', id:"name",placeholder: "What is your last name?"} %>
     <%= f.input :profile_name,label: false, input_html: { class: 'form-input',id:"name", placeholder:"What is your profile name?"} %>
-    <%= f.input :school_name,label: false, input_html: { class: 'form-input',id:"name", placeholder:"What school do you attend?"}, :collection => ['Rutgers','Princeton'], prompt: "What school do you attend?"%>
+    <%= f.input :school_name,label: false, input_html: { class: 'form-input',id:"name", placeholder:"What school do you attend?"}%>
     <%= f.input :email,label: false, input_html: { class: 'form-input', id:"email", placeholder:"Enter your email"} %>
-    <%= f.input :diet,label: false, input_html: { class: 'form-input',id:"name", placeholder:"Do you have any dietary restrictions?"}, :collection => ['Yes','No'], prompt: "Do you have any dietary restrictions?"%>
+    <%= f.input :tshirt_size,label: false, input_html: { class: 'form-input',id:"name", placeholder:"What is your t-shirt size?"}, :collection => ['Men\'s Small','Men\'s Medium','Men\'s Large', 'Men\'s XL', 'Women\'s Small', 'Women\'s Medium', 'Women\'s Large', 'Women\'s XL'], prompt: "What is your t-shirt size?"%>
+    <%= f.input :diet,label: false, input_html: { class: 'form-input',id:"name", placeholder:"Do you have any dietary restrictions?"}, :collection => ['No', 'Vegetarian', 'Kosher', 'Other'], prompt: "Do you have any dietary restrictions?"%>
+    <%= f.input :special_needs,label: false, input_html: { class: 'form-input',id:"name", placeholder:"Do you have any special needs?"}, prompt: "Do you have any special needs?"%>
     <%= f.input :git_account,label: false, input_html: { class: 'form-input',id:"name", placeholder:"Enter your GitHub handle"} %>
     <%= f.input :password,label: false, input_html: { class: 'form-input', id:"name", placeholder:"Enter your password", autocomplete: 'off' } %>
     <%= f.input :password_confirmation, label: false, input_html: {class: 'form-input',id:"name", placeholder:"Re-Enter your password", autocomplete: 'off'} %>

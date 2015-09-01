@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+o<!DOCTYPE html>
 <html>
 <head>
   <title>HACKRU | Fall 2015</title>
@@ -13,12 +13,12 @@
   <nav id = "nav">
     <div id = "nav_center">
       <div id="hackru_penguin"><%= link_to image_tag("hack_ru_logo.png", :class => 'home_btn'), homes_path%></div>
-      <%= link_to "about", homes_path(@home, :anchor => "about"), {:class=>"nav_text"}%>
-      <%= link_to "faq", homes_path(@home, :anchor => "faq"), {:class => 'nav_text'}%>
-      <%= link_to "sponsors", homes_path(@home, :anchor => "sponsors"), {:class => 'nav_text'}%>
-      <%= link_to "schedule", homes_path(@home, :anchor => "schedule"), {:class => 'nav_text'}%>
-      <%= link_to "team", homes_path(@home, :anchor => "team"), {:class => 'nav_text'}%>
-      <%= link_to "location", homes_path(@home, :anchor => "location"), {:class => 'nav_text'}%>
+        <%= link_to "about", homes_path(@home, :anchor => "about"), {:class=>"nav_text"}%>
+        <%= link_to "faq", homes_path(@home, :anchor => "faq"), {:class => 'nav_text'}%>
+        <%= link_to "sponsors", homes_path(@home, :anchor => "sponsors"), {:class => 'nav_text'}%>
+        <%= link_to "schedule", homes_path(@home, :anchor => "schedule"), {:class => 'nav_text'}%>
+        <%= link_to "team", homes_path(@home, :anchor => "team"), {:class => 'nav_text'}%>
+        <%= link_to "location", homes_path(@home, :anchor => "location"), {:class => 'nav_text'}%>
     </div>
 
     <ul id="signup">
@@ -30,19 +30,18 @@
         <%= link_to "Sign in", login_path, class: 'registerBtn2 registerBtn-2'%>
       <% end %>
     </ul>
-  </nav>
 
-  <div class="container">
+  <div class="container_flash">
     <%= render_breadcrumbs %>
     <%flash.each do |type, message|%>
     <div class="alert <%= flash_class type %>">
-      <button class="close" data-dismiss="alert">x</button>
       <%= message %>
+      <button class="close" data-dismiss="alert">x</button>
     </div>
     <% end %>
   </div>
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
+  </nav>
+
   <%= yield %>
   <!--FOOTER BEGIN -->
  <footer id="footer">

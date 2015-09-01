@@ -1,5 +1,11 @@
+
 <p>Welcome <%= @email %>!</p>
 
-<p>You can confirm your account email through the link below:</p>
+<h2>By confirming, you are creating your profile. Registration will begin ONE WEEK before HackRU.</h2>
+<p>Due to high demand and limited space, this semester, HackRU will have a rolling registration period for people with valid profiles on our site.</p>
+<p>We will notify you by email when registration officially opens. At this time, a registration field will appear in your profile.</p>
+<p>When you update this field by signing into your profile after registration opens, you will receive a ticket for HackRU.</p>
+
+<p>You can confirm your account email by signing into your profile through the link below.</p>
 
 <p><%= link_to 'Confirm my account', confirmation_url(@resource, confirmation_token: @token) %></p>
