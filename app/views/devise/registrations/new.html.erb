@@ -9,7 +9,7 @@
     <%= f.input :school_name,label: false, input_html: { class: 'form-input',id:"name", placeholder:"Enter your school"}%>
     <%= f.input :school_year,label: false, input_html: { class: 'form-input',id:"name", placeholder:"Enter your school year"}, :collection => ['Freshman', 'Sophomore', 'Junior', 'Senior', 'Recent Graduate'], prompt: "Enter your school year"%>
     <%= f.input :email,label: false, input_html: { class: 'form-input', id:"email", placeholder:"Enter your email"} %>
-    <%= f.input :tshirt_size,label: false, input_html: { class: 'form-input',id:"name", placeholder:"What is your t-shirt size?"}, :collection => ['Men\'s Small','Men\'s Medium','Men\'s Large', 'Men\'s XL', 'Women\'s Small', 'Women\'s Medium', 'Women\'s Large', 'Women\'s XL'], prompt: "What is your t-shirt size?"%>
+    <%= f.input :tshirt_size,label: false, input_html: { class: 'form-input',id:"name", placeholder:"What is your t-shirt size?"}, :collection => ['Men\'s Small','Men\'s Medium','Men\'s Large', 'Men\'s X-Large', 'Women\'s X-Small', 'Women\'s Small', 'Women\'s Medium', 'Women\'s Large'], prompt: "What is your t-shirt size?"%>
     <%= f.input :diet,label: false, input_html: { class: 'form-input',id:"name", placeholder:"Do you have any dietary restrictions?"}, :collection => ['No', 'Vegetarian', 'Kosher', 'Other'], prompt: "Do you have any dietary restrictions?"%>
     <%= f.input :special_needs,label: false, input_html: { class: 'form-input',id:"name", placeholder:"Do you have any special needs?"}, prompt: "Do you have any special needs?"%>
     <%= f.input :git_account,label: false, input_html: { class: 'form-input',id:"name", placeholder:"Enter your GitHub handle"} %>

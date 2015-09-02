@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>HACKRU | Fall 2015</title>
+  <title>HackRU | Fall 2015</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= favicon_link_tag 'favicon.png' %>
@@ -45,19 +45,21 @@
 
   <%= yield %>
   <!--FOOTER BEGIN -->
- <footer id="footer">
-   <div id="footerTop">
-     <img id="mlh_footer_logo" src= "/assets/mlh-logo-white.png"/>
-  </div>
-  <div id = "footerBottom">
-    <div class="footerDetails2">
-       <a target="_blank" href="https://twitter.com/thehackru" ><img id="twitter_logo" src= "/assets/Twitter_logo_white_small.png"/></a>
-       <a target="_blank" href="https://instagram.com/thehackru" ><img id="fb_logo" src= "/assets/instagram.png"/></a>
-       <a target="_blank" href="https://www.facebook.com/theHackRU" ><img id="fb_logo" src= "/assets/FB-f-Logo__blue_72.png"/></a>
-       <a target="_blank" href="http://usacs.rutgers.edu" ><img id="usacs_logo" src= "/assets/usacs.png"/></a>
+  <footer id="footer">
+    <div id="footerTop">
+      <div class="footerDetails">
+        <img id="usacs_logo" src= "/assets/usacs.png"/>
+        <img id="mlh_footer_logo" src= "/assets/mlh-logo-white.png"/>
+      </div>
     </div>
-  </div>
- </footer>
+   <div id = "footerBottom">
+      <div class="footerDetails2">
+        <a target="_blank" href="https://www.facebook.com/theHackRU" ><img id="fb_logo" src= "/assets/FB-f-Logo__blue_72.png"/></a>
+        <a target="_blank" href="https://twitter.com/thehackru" ><img id="twitter_logo" src= "/assets/Twitter_logo_white_small.png"/></a>
+        <a target="_blank" href="https://instagram.com/thehackru" ><img id="fb_logo" src= "/assets/instagram.png"/></a>
+      </div>
+    </div>
+  </footer>
   <!-- FOOTER END -->
 </body>
 <script id="activities-template" type="text/x-handlebars-template">

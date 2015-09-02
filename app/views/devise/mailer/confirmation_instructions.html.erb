@@ -44,7 +44,6 @@
                 h1{font-size:34px !important;}
                 h2{font-size:30px !important;}
                 h3{font-size:24px !important;}
-
                 img[id="heroImage"]{height:auto !important; max-width:520px !important; width:100% !important;}
 
                 td[class="introductionLogo"], td[class="introductionHeading"]{display:block !important;}
@@ -63,6 +62,7 @@
 
                 td[class="footerContent"]{font-size:15px !important;}
                 td[class="footerContent"] a{display:block;}
+
             }
             </style>
         </head>
@@ -80,7 +80,7 @@
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
                                         <tr>
                                             <td align="center" valign="middle" class="introductionHeading" style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;color: #808080;font-size: 14px;font-weight: bold;line-height: 150%;padding-left: 40px;">  
-                                                <h1 style="margin: 0;padding: 0;font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;color: #D83826;font-size: 44px;font-weight: 100;line-height: 115%;text-align: center;">HACKRU IX</h1>
+                                                <h1 style="margin: 0;padding: 0;font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;color: #D83826;font-size: 60px;font-weight: 100;line-height: 115%;text-align: center;">HACKRU IX</h1>
                                             </td>
                                         </tr>
                                     </table>
@@ -88,12 +88,11 @@
                             </tr>
                             <tr>
                                 <td align="center" valign="top" class="introductionContent" style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;color: #606060;font-size: 18px;line-height: 150%;padding-top: 40px;">
-                                  By confirming, you are creating your profile. <br> Registration will being ONE WEEK before HACKRU.<br><br>
-                                  Due to high demand and limited space, this sememster, HackRU will have a rolling registration periond for people with valid profiles on our site.<br><br>
-                                  We will notify you by email when registration officially opens.<br> At this time, a registration field will appear in your profile.<br><br>
-                                  Whebn you update this field by signing into your profile after registration opens, you will receive a ticket for HackRU.<br><br>
-                                  You can fonfirm your account email by signing into your profile through the link below.<br><br>
-                                <%= link_to 'Confirm my account', confirmation_url(@resource, confirmation_token: @token) %>
+                                  Thank you for signing up! By confirming your account, you are registering for HackRU Fall 2015.<br><br>
+                                  Due to high demand and limited space, HackRU will be capping attendance this semester. As such, we will send an email asking you to confirm your attendance one week before the event, so that the places for people who can no longer attend can be given to other hackers!.<br><br>
+                                  When you confirm your attendance, you will receive a ticket for HackRU.<br><br>
+                                  You can complete your registration by signing into your profile through the link below:<br><br>
+                                  <h2><%= link_to 'Confirm my account!', confirmation_url(@resource, confirmation_token: @token) %></h2>
                                 </tr>
                         </table>
                         <!-- END INTRO BLOCK // -->
@@ -158,7 +157,7 @@
                                                     </table>
                                                 </td>
                                                 <td align="left" valign="top" class="eventContent" style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;color: #606060;font-size: 16px;line-height: 125%;padding-left: 20px;">
-                                                    <h3 style="margin: 0;padding: 0;font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;color: #D83826;font-size: 30px;font-weight: 100;line-height: 115%;text-align: left;">Rutgers Student Center</h3>
+                                                    <h3 style="margin: 0;padding: 0;font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;color: #D83826;font-size: 30px;font-weight: 100;line-height: 115%;text-align: left;">College Ave Student Center</h3>
                                                     <strong>Running October 3 and 4</strong>
                                                     <br>
                                                     126 College Avenue, New Brunswick, NJ
@@ -196,7 +195,7 @@
             </tr>
             <tr>
                 <td align="center" valign="top" class="footerContent" style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;color: #AAAAAA;font-size: 13px;line-height: 150%;padding-bottom: 40px;">
-                    &copy; 2015 HackRU. &bull; Rutgers New Brunswick &bull; USACS
+                    &copy; 2015 HackRU &bull; Rutgers New Brunswick &bull; USACS
                     <br>
                     <br>
                 </td>
