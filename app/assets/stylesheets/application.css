@@ -1046,7 +1046,7 @@ address{
   #command_container {
     width: 100%;
   }
-  
+
   .location_img_row {
     margin: auto;
   }
@@ -1122,7 +1122,7 @@ address{
   }
 
   #location{
-    height: 100%;
+    height: 1650px;
     display: block;
     width: 100%;
     background: #990000;
@@ -1504,6 +1504,10 @@ address{
     font-size: 6em;
   }
 
+  #location {
+    height: 130%;
+  }
+
   #hackru_penguin {
     display: none;
   }
@@ -1832,7 +1836,7 @@ Mobile Style
   }
 
   .circular {
-    width: 80%;
+    width: 75%;
     height: auto;
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -1930,7 +1934,7 @@ Mobile Style
   }
 
   #location{
-    height: 100%;
+    height: 110%;
     display: block;
     width: 100%;
     background: #990000;
