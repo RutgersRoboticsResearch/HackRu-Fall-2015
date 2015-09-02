@@ -3,10 +3,11 @@
   <fieldset>
     <%= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name), html: { class: 'form-vertical' }) do |f| %>
     <%= devise_error_messages! %>
-    <%= f.input :first_name, label: false, input_html: { class: 'form-input', id:"name",placeholder: "What is your first name?"} %>
-    <%= f.input :last_name, label: false, input_html: { class: 'form-input', id:"name",placeholder: "What is your last name?"} %>
-    <%= f.input :profile_name,label: false, input_html: { class: 'form-input',id:"name", placeholder:"What is your profile name?"} %>
-    <%= f.input :school_name,label: false, input_html: { class: 'form-input',id:"name", placeholder:"What school do you attend?"}%>
+    <%= f.input :first_name, label: false, input_html: { class: 'form-input', id:"name",placeholder: "Enter your first name"} %>
+    <%= f.input :last_name, label: false, input_html: { class: 'form-input', id:"name",placeholder: "Enter your last name"} %>
+    <%= f.input :profile_name,label: false, input_html: { class: 'form-input',id:"name", placeholder:"Create a user name"} %>
+    <%= f.input :school_name,label: false, input_html: { class: 'form-input',id:"name", placeholder:"Enter your school"}%>
+    <%= f.input :school_year,label: false, input_html: { class: 'form-input',id:"name", placeholder:"Enter your school year"}, :collection => ['Freshman', 'Sophomore', 'Junior', 'Senior', 'Recent Graduate'], prompt: "Enter your school year"%>
     <%= f.input :email,label: false, input_html: { class: 'form-input', id:"email", placeholder:"Enter your email"} %>
     <%= f.input :tshirt_size,label: false, input_html: { class: 'form-input',id:"name", placeholder:"What is your t-shirt size?"}, :collection => ['Men\'s Small','Men\'s Medium','Men\'s Large', 'Men\'s XL', 'Women\'s Small', 'Women\'s Medium', 'Women\'s Large', 'Women\'s XL'], prompt: "What is your t-shirt size?"%>
     <%= f.input :diet,label: false, input_html: { class: 'form-input',id:"name", placeholder:"Do you have any dietary restrictions?"}, :collection => ['No', 'Vegetarian', 'Kosher', 'Other'], prompt: "Do you have any dietary restrictions?"%>
@@ -16,8 +17,13 @@
     <%= f.input :password_confirmation, label: false, input_html: {class: 'form-input',id:"name", placeholder:"Re-Enter your password", autocomplete: 'off'} %>
     <h4>Upload your resume!</h4>
     <%= f.input :resume, as: :file, input_html: {class: 'file_upload'} %>
+
+    <h4 style="text-align: center;">By clicking on the "Sign Up" button below, you agree to the terms and conditions outlined in the <a style="color:#555;" href="http://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank">MLH Code of Conduct</a>.</h4>
     <%= f.submit "Sign Up", class: 'registerBtn registerBtn-1' %><br />
+    
     <% end %>
   </fieldset>
+  <h4 style=" padding-bottom:2em; text-align: center; width: 70%; line-height:130%; margin-left:auto; margin-right:auto;">We are sanctioned by and participate in, <a style="color:#555;"href="https://mlh.io" target="_blank">Major League Hacking</a> (MLH). You authorize us to share certain application/registration information for event administration, ranking, MLH administration, and occasional messages about hackathons in line with the <a style="color: #555;" href="https://mlh.io/privacy" target="_blank">MLH Privacy Policy</a>.</h4>
+
 </div>
 

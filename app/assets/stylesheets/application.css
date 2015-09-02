@@ -539,11 +539,37 @@ About Style
   color: #c60000;
   font-size: 4em;
   font-weight: bold;
-  margin-top: 6%;
-  padding-bottom: 1.5em;
+  padding-top: 0;
+  padding-bottom: 0.5em;
+  margin-top: 0;
 }
 
 #official_mobile {
+  display: none;
+}
+
+#about_header_text {
+  display: inline-block;
+}
+
+#mlh-trust-badge {
+  width: 140px;
+  z-index: 10000;
+  -webkit-filter: drop-shadow(5px 11px 10px #888888);
+  filter: drop-shadow(5px 11px 10px #888888);
+  height: auto;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+#mlh-phone {
+  width: 140px;
+  z-index: 10000;
+  -webkit-filter: drop-shadow(0px 0px 10px #888888);
+  filter: drop-shadow(0px 0px 10px #888888);
+  height: auto;
+  margin-left: 100px;
+  margin-right: 100px;
   display: none;
 }
 
@@ -780,7 +806,7 @@ Team Style
 .team_article_mobile {
   display: none;
 }
-
+/F
 #team_header {
   color: #c60000;
   padding-bottom: 0.25em;
@@ -894,13 +920,13 @@ footer{
 }
 
 #footerTop{
-  background: black;
-  height: 150px;
+  background: #222;
+  height: 300px;
   padding-top: 3em;
 }
 
 #footerBottom{
-  background: #333333;
+  background: #222;
   width: 100%;
 }
 
@@ -915,14 +941,14 @@ footer{
 }
 
 .footerDetails{
-  width: 1000px;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
   height: 6.5em;
 }
 
 .footerDetails2{
-  width: 300px;
+  width: 600px;
   margin-right: auto;
   margin-left: auto;
   padding-top: 2em;
@@ -954,6 +980,12 @@ footer{
   padding-left: 25px;
 }
 
+#usacs_logo{
+  width: 230px;
+  height: auto;
+  padding-left: 25px;
+}
+
 address{
   display: inline-block;
   color: white;
@@ -981,7 +1013,34 @@ address{
   float: right;
 }
 
+#faq_mobile_link {
+  display: none;
+}
+
+#mlh_footer_logo{
+  display: block;
+  padding-top: 1.5em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+}
+
+@media screen and (max-width: 1605px) {
+
+  #mlh-trust-badge {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+}
+
 @media screen and (max-width: 1410px) {
+
+  #mlh-trust-badge {
+    width: 100px;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
 
   #footerLinks{
     display: none;
@@ -993,6 +1052,25 @@ address{
 }
 
 @media screen and (max-width: 1280px) {
+
+  #about h2 {
+  }
+
+  #mlh-trust-badge {
+    width: 100px;
+    margin-top: 0;
+    padding-top: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  #faq_link {
+    display: none;
+  }
+
+  #faq_mobile_link {
+    display: block;
+  }
 
   #branding {
     margin-top: 50px;
@@ -1339,7 +1417,7 @@ address{
   }
 
   #official_mobile {
-    width: 85%;
+    width: 98%;
     font-size: 2em;
     line-height: 120%;
     padding-top: 5%;
@@ -1396,7 +1474,7 @@ address{
   }
 
   .circular {
-    width: 80%;
+    width: 75%;
     height: auto;
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -1483,8 +1561,21 @@ address{
 }
 
 @media screen and (max-width: 950px) {
-  #footerTop {
+
+  #about h2 {
+    padding-top: 1em;
+  }
+
+  #mlh-trust-badge {
     display: none;
+  }
+
+  #mlh-phone {
+    display: block;
+    padding-top: 1em;
+    padding-bottom: 0.3em;
+    margin-left: auto;
+    margin-right: auto;
   }
 
 }
@@ -1957,11 +2048,14 @@ Mobile Style
     margin-top: -10%;
   }
 
+
   
 .footerDetails2{
-  width: 150px;
+  width: 280px;
   padding-top: 1em;
   height: 3em;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footerDetails2 a {
@@ -1980,10 +2074,25 @@ Mobile Style
   height: 30px;
 
   }
+
+  #footerTop{
+    height: 180px;
+  }
+
   #fb_logo {
     width: 35px;
     height: 30px;
     padding-left: 10px;
+  }
+
+  #usacs_logo{
+  width: 115px;
+  height: auto;
+  padding-left: 10px;
+  }
+
+  #mlh_footer_logo{
+  width: 200px;
   }
 
 }

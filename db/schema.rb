@@ -97,6 +97,7 @@ ActiveRecord::Schema.define(:version => 20150820163824) do
     t.string   "diet"
     t.string   "tshirt_size"
     t.string   "special_needs"
+    t.string   "school_year"
     t.string   "email",                  :default => "", :null => false
     t.string   "encrypted_password",     :default => "", :null => false
     t.string   "reset_password_token"
