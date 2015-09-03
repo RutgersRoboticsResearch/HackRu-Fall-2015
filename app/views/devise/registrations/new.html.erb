@@ -15,7 +15,7 @@
     <%= f.input :git_account,label: false, input_html: { class: 'form-input',id:"name", placeholder:"Enter your GitHub handle"} %>
     <%= f.input :password,label: false, input_html: { class: 'form-input', id:"name", placeholder:"Enter your password", autocomplete: 'off' } %>
     <%= f.input :password_confirmation, label: false, input_html: {class: 'form-input',id:"name", placeholder:"Re-Enter your password", autocomplete: 'off'} %>
-    <h4>Upload your resume in .pdf, .txt, .doc, or .docx</h4>
+    <h4 style="line-height: 130%;">Upload your resume in .pdf, .txt, .doc, or .docx - 1MB max. </h4>
     <%= f.input :resume, as: :file, input_html: {class: 'file_upload'} %>
 
     <h4 style="text-align: center; line-height: 130%;">By clicking on the "Sign Up" button below, you agree to the terms and conditions outlined in the <a style="color:#555;" href="http://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank">MLH Code of Conduct</a>.</h4>
