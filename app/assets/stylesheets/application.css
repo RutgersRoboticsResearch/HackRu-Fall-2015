@@ -554,7 +554,6 @@ About Style
 
 #mlh-trust-badge {
   width: 140px;
-  z-index: 10000;
   -webkit-filter: drop-shadow(5px 11px 10px #888888);
   filter: drop-shadow(5px 11px 10px #888888);
   height: auto;
@@ -564,7 +563,6 @@ About Style
 
 #mlh-phone {
   width: 140px;
-  z-index: 10000;
   -webkit-filter: drop-shadow(0px 0px 10px #888888);
   filter: drop-shadow(0px 0px 10px #888888);
   height: auto;

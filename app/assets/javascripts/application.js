@@ -174,3 +174,32 @@ switchAccordion = function(e) {
     accordionToggles[i].addEventListener('click', switchAccordion, false);
   }
 })();
+
+
+//function
+var _validFileExtensions = [".pdf", ".txt", ".doc", ".docx"]
+function Validate(oForm) {
+  var arrInputs = oForm.getElementsByTagName("input");
+  for (var i = 9; i < arrInputs.length; i++) {
+    var oInput = arrInputs[i];
+    if (oInput.type == "file") {
+      var sFileName = oInput.value;
+      if (sFileName.length > 0) {
+        var blnValid = false;
+        for (var j = 0; j < _validFileExtensions.length; j++) {
+          var sCurExtension = _validFileExtensions[j];
+          if (sFileName.substr(sFileName.length - sCurExtensions.length, sCurExtension.length).toLowerCase() == sCurExtension.toLowerCase()) {
+            blnValid = true;
+            break;
+          }
+        }
+
+        if (!blnValid) {
+          alert("Sorry, " + sFileName + " is invalid. Allowed extensions are: " + _validFileExtensions.join(", "));
+          return false;
+        }
+      }
+    }
+  }
+  return true;
+}

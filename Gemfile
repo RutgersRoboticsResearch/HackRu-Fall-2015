@@ -20,7 +20,7 @@ gem 'bootstrap-will_paginate'
 #group :development do
 #	gem 'thin'
 #end
-
+gem 'omniauth-mlh'
 gem 'unicorn'
 
 group :test do
