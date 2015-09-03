@@ -27,8 +27,8 @@
         <%= link_to "Profile", edit_user_registration_path, class: 'registerBtn2 registerBtn-2'%>
         <%= link_to "Log Out", logout_path, class: 'registerBtn2 registerBtn-2' %>
       <% else %>
-        <%= link_to "Sign up", register_path, class: 'registerBtn2 registerBtn-2' %>
-        <%= link_to "Sign in", login_path, class: 'registerBtn2 registerBtn-2'%>
+        <%= link_to "Sign up", user_omniauth_authorize_path(:mlh) , class: 'registerBtn2 registerBtn-2' %>
+        <%= link_to "Sign in", user_omniauth_authorize_path(:mlh), class: 'registerBtn2 registerBtn-2'%>
       <% end %>
     </ul>
 

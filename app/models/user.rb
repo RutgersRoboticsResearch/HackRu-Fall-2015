@@ -3,7 +3,8 @@ class User < ActiveRecord::Base
   # :token_authenticatable, :confirmable,
   # :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :trackable, :validatable, :confirmable
+         :recoverable, :rememberable, :trackable, :validatable, :confirmable,
+         :omniauthable, :omniauth_providers => [:mlh]
 
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation, :remember_me,
@@ -96,6 +97,36 @@ class User < ActiveRecord::Base
 
   def send_welcome_email
     UserNotifier.welcome_email(id).deliver
+  end
+
+  def self.new_with_session(params, session)
+    super.tap do |user|
+      if session["devise.mlh_data"] && session["devise.mlh_data"]["info"]
+        data = session['devise.mlh_data']['info']
+
+        user.email = data.email if user.email.blank?
+        user.first_name = data.first_name if user.first_name.blank?
+        user.last_name = data.last_name if user.last_name.blank?
+        user.school_name = data.school.name if user.school_name.blank?
+        user.tshirt_size = data.shirt_size if user.tshirt_size.blank?
+        user.diet = data.dietary_restrictions if user.diet.blank?
+        user.special_needs = data.special_needs if user.special_needs.blank?
+      end
+    end
+  end
+
+  def self.from_omniauth(auth)
+    where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
+      user.email = auth.info.email
+      user.password = Devise.friendly_token[0,20]
+      user.first_name = auth.info.first_name
+      user.last_name = auth.info.last_name
+      user.school_name = auth.info.school.name
+      user.tshirt_size = auth.info.shirt_size
+      user.diet = auth.info.dietary_restrictions
+      user.special_needs = auth.info.special_needs
+      user.profile_name = "#{auth.info.first_name}-#{auth.info.last_name}"
+    end
   end
 
 end
