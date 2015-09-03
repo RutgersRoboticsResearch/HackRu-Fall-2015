@@ -104,6 +104,8 @@ class User < ActiveRecord::Base
       if session["devise.mlh_data"] && session["devise.mlh_data"]["info"]
         data = session['devise.mlh_data']['info']
 
+        user.uid = session['devise.mlh_data']['uid']
+        user.provider = :mlh
         user.email = data.email if user.email.blank?
         user.first_name = data.first_name if user.first_name.blank?
         user.last_name = data.last_name if user.last_name.blank?
@@ -125,7 +127,6 @@ class User < ActiveRecord::Base
       user.tshirt_size = auth.info.shirt_size
       user.diet = auth.info.dietary_restrictions
       user.special_needs = auth.info.special_needs
-      user.profile_name = "#{auth.info.first_name}-#{auth.info.last_name}"
     end
   end
 
