@@ -4,7 +4,6 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
     @user = User.from_omniauth(request.env["omniauth.auth"])
 
      if @user.persisted?
-       @user.confirm! if request.env["omniauth.auth"]["info"]["email"] == @user.email
        sign_in_and_redirect @user, :event => :authentication
        set_flash_message(:notice, :success, :kind => "MLH") if is_navigational_format?
      else

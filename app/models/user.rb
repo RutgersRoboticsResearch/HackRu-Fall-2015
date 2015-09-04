@@ -15,12 +15,8 @@ class User < ActiveRecord::Base
 
   validates :last_name, presence: true
 
-  validates :profile_name, presence: true,
-                           uniqueness: true,
-                           format: {
-                             with: /^[a-zA-Z0-9_-]+$/,
-                             message: 'Must be formatted correctly.'
-                           }
+  validates :resume, presence: true
+  validates :git_account, presence: true
   
   has_many :activities                          
   has_many :albums
@@ -106,6 +102,9 @@ class User < ActiveRecord::Base
 
         user.uid = session['devise.mlh_data']['uid']
         user.provider = :mlh
+        user.password = Devise.friendly_token[0,20]
+        user.profile_name = "#{data.first_name}#{session['devise.mlh_data']['uid']}"
+        data.special_needs if user.special_needs.blank?
         user.email = data.email if user.email.blank?
         user.first_name = data.first_name if user.first_name.blank?
         user.last_name = data.last_name if user.last_name.blank?
@@ -121,6 +120,7 @@ class User < ActiveRecord::Base
     where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
       user.email = auth.info.email
       user.password = Devise.friendly_token[0,20]
+      user.profile_name = "#{auth.info.first_name}#{auth.uid}"
       user.first_name = auth.info.first_name
       user.last_name = auth.info.last_name
       user.school_name = auth.info.school.name

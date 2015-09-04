@@ -26,6 +26,7 @@ gem 'unicorn'
 group :test do
 	gem 'shoulda'
 	gem 'factory_girl_rails'
+  gem 'test-unit'
 end
 
 group :development, :test do
