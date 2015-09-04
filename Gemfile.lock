@@ -1,8 +1,8 @@
 GIT
-  remote: git@github.com:MLH/omniauth-mlh.git
-  revision: 17a8bd7ba251de22bb248d30ec21976000382ae7
+  remote: https://github.com/MLH/omniauth-mlh.git
+  revision: 48661e9c90c738dec858de1d951a60d741619f12
   specs:
-    omniauth-mlh (0.1.0)
+    omniauth-mlh (0.1.2)
       omniauth (~> 1.0)
       omniauth-oauth2 (>= 1.1.1, < 2.0)
 
