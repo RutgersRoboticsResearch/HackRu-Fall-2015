@@ -88,11 +88,13 @@
                             </tr>
                             <tr>
                                 <td align="center" valign="top" class="introductionContent" style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;color: #606060;font-size: 18px;line-height: 150%;padding-top: 40px;">
-                                  Thank you for signing up! By confirming your account, you are registering for HackRU Fall 2015.<br><br>
-                                  Due to high demand and limited space, HackRU will be capping attendance this semester. As such, we will send an email asking you to confirm your attendance one week before the event, so that the places for people who can no longer attend can be given to other hackers!.<br><br>
+                                  Thank you for signing up! HackRU IX registration is currently full.<br><br>
+                                  By confirming your account, you will be added to the waitlist. <br><br>
+                                  Due to high demand and limited space, HackRU is capping attendance this semester. If more space becomes available, we will send an email asking you to confirm your attendance one week before the event. If you cannot be accommodated, we will let you know at that time.<br><br>
                                   When you confirm your attendance, you will receive a ticket for HackRU.<br><br>
-                                  You can complete your registration by signing into your profile through the link below:<br><br>
-                                  <h2><%= link_to 'Confirm my account!', confirmation_url(@resource, confirmation_token: @token) %></h2>
+                                  You can join the waitlist by signing into your profile through the link below:<br><br>
+
+                                  <h2><%= link_to 'Add me to the waitlist!', confirmation_url(@resource, confirmation_token: @token) %></h2>
                                 </tr>
                         </table>
                         <!-- END INTRO BLOCK // -->
