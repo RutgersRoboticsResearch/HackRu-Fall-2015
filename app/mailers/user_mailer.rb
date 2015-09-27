@@ -5,4 +5,10 @@ class UserMailer < ActionMailer::Base
 		@user = user
 		mail(to: @user.email, :subject => 'Welcome to hackRU!')
 	end
+
+  def important_information(user)
+    @user = user
+    mail(to: @user.email, :subject => 'Welcome to hackRU!')
+  end
+
 end

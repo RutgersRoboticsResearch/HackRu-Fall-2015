@@ -11,6 +11,15 @@
     </fieldset>
     -->
     <h1 class="form_head">Edit My Profile</h1>
+    <% if current_user.id <= 1000 %>
+    <fieldset>
+    <legend>Confirm My Spot</legend>
+    <h2 style="font-size: 1.8em;color:#de0000;">In order to get your ticket to HackRU, fill in the checkbox below, confirm changes at the bottom and hit Update.<br>You will receive an email shortly with your ticket number and more information about HackRU.</h2>
+    <center> <%= f.input :registered, :as => :boolean, inline_label: "Yes, I'm going to HackRU!", input_html:{
+                  style: 'width: 20px; height: 20px; border-radius: 20px; margin: 15px; margin-top: 5px;'} %> </center>
+    </fieldset>
+    <% end %>
+
     <fieldset>
       <legend>Profile Avatar</legend>
       <%= bootstrap_paperclip_picture f, :avatar %>
