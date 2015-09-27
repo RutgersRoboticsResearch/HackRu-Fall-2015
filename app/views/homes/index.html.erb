@@ -6,8 +6,13 @@
       <div id="branding">
         <h6 id="main_header"> HackRU <font color="#bbb">IX</font> </h6>
       </div>
-      <a href="register.html" class="registerBtn registerBtn-1">Sign Up!</a> <br>
-      <a href="login.html" class="registerBtn registerBtn-1" id="tablet_sign_in_home">Sign In!</a> <br>
+      <% if user_signed_in? %>
+        <%= link_to "Profile", edit_user_registration_path, class: 'registerBtn registerBtn-1'%>
+        <%= link_to "Log Out", logout_path, class: 'registerBtn registerBtn-1' %>
+      <% else %>
+        <%= link_to "Sign up", register_path, class: 'registerBtn registerBtn-1' %>
+        <%= link_to "Sign in", login_path, class: 'registerBtn registerBtn-1'%>
+      <% end %>
       <h1> <weed style="line-height: 150%;">October 3 &amp; 4 2015</weed><br>
         College Ave Student Center <br>
         126 College Avenue <br>
